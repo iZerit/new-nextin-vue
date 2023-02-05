@@ -7,6 +7,7 @@
 //
 
 
+
 $(document).ready(function(){
 
     // map show for mobile
@@ -51,7 +52,7 @@ $(document).ready(function(){
         }else{
             $('#btn-back-to-top').hide();
         }
-        if(this.scrollY > 200){
+        if(this.scrollY > 100){
             $('.home2').show();
             $('.home1').hide();
         }else{
@@ -88,7 +89,7 @@ $(document).ready(function(){
 // loaderni ochirish vvvvvvvvvvvv
 
 $(window).on("load",function(){
-    $(".loader_div").fadeOut("slow");
+    $(".loader_div").fadeOut();
 });
 
 

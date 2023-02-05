@@ -1,11 +1,10 @@
 <template>
 <Background/>
 
-  <!-- contianer boshlandi -->
+
   <div class="main">
     <Header/>
 <!--    main qatori boshladi-->
-
  <router-view/>
     <!--    main qatori tugadi-->
 

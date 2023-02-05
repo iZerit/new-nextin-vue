@@ -151,7 +151,7 @@
 
         </div>
         <div class="center_button d-flex justify-content-center mt-3 mb-5">
-          <a href="./services.html" class="btn service_sec_but">Barcha xizmatlar</a>
+          <router-link to="/xizmatlar" class="btn service_sec_but">Barcha xizmatlar</router-link>
         </div>
       </div>
     </div>
