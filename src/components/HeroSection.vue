@@ -16,20 +16,15 @@
         </div>
         <div class="img_div_first col-lg-6 col-md-6 col-sm-12">
 
-          <img class="img-fluid" src="src/assets/blog_banner.png" alt="">
+          <img class="img-fluid" src="../assets/blog_banner.png" alt="">
         </div>
       </div>
       <div class="scrool_div mb-5">
         <div class="scrool_down" id="scrool_bottom">
-          <!-- <div class="chevron"></div> -->
-          <div class="chevron chevron1"></div>
-          <div class="chevron chevron1"></div>
-          <div class="chevron chevron1"></div>
-          <!-- <div class="chevron"></div> -->
-          <!-- <div class="chevron"></div> -->
 
-
-          <!-- <span class="text text-dark">Scroll down</span>  -->
+          <div class="chevron chevron1"></div>
+          <div class="chevron chevron1"></div>
+          <div class="chevron chevron1"></div>
         </div>
       </div>
 

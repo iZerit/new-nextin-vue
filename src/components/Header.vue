@@ -3,7 +3,7 @@
   <header class="site-header sticky-top home1" id="home1">
     <nav class="navbar navbar-light">
       <div class="container">
-        <router-link class="logo-img" to="/"><img class="img-fluid" src="/src/assets/output-onlinepngtools.png" alt=""></router-link>
+        <router-link class="logo-img" to="/"><img class="img-fluid" src="../assets/MainLogo.png" alt=""></router-link>
         <button  class="shadow-none navbar-toggler custom-toggler  navbar-toggler-but" type="button"
                  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
   <header class="site-header sticky-top home2" id="home2">
     <nav class="navbar navbar-expand-lg ">
       <div class="container">
-        <router-link class="logo-img" to="/"><img class="img-fluid" src="src/assets/output-onlinepngtools.png" alt=""></router-link>
+        <router-link class="logo-img" to="/"><img class="img-fluid" src="../assets/MainLogo.png" alt=""></router-link>
         <ul class="navbar-nav home2_for_mobile_menu" id="home2_for_mobile_menu">
           <li class="nav-item">
             <router-link class="nav-link" to="/">Bosh sahifa</router-link>
@@ -32,7 +32,7 @@
             <a class="nav-link" href="#">Bizning ishlar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./price_list.html">Narxlar</a>
+            <router-link class="nav-link" to="/">Narxlar</router-link>
           </li>
           <li class="nav-item ">
             <router-link class="nav-link" to="/xizmatlar">Xizmatlar</router-link>
@@ -62,10 +62,10 @@
         </li>
 
         <li class="nav-item offcanvas-nav-item">
-          <a class="sitenav-item-link " href="./team.html">Jamoa</a>
+          <router-link class="sitenav-item-link " to="/">Jamoa</router-link>
         </li>
         <li class="nav-item offcanvas-nav-item">
-          <a class="sitenav-item-link" href="./price_list.html">Narxlar</a>
+          <router-link class="sitenav-item-link" to="/">Narxlar</router-link>
         </li>
         <li class="nav-item offcanvas-nav-item offcanvas-dropdown-menu" >
           <router-link class="sitenav-item-link" style="padding:0;" to="/xizmatlar">Xizmatlar</router-link>

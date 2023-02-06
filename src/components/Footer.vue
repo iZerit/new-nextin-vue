@@ -7,7 +7,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="footer_logo mt-5">
             <a href="#">
-              <img src="src/assets/output-onlinepngtools.png" alt="">
+              <img src="../assets/MainLogo.png" alt="">
             </a>
           </div>
           <div class="footer_link_txt"><h3>Ijtimoiy tarmoqlar</h3></div>

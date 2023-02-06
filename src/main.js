@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import MaskedInput from 'vue-text-mask'
+
 
 
 
@@ -20,5 +20,3 @@ app.AOS = new AOS.init({ disable: "phone"});
 
 app.use(AOS).mount('#app')
 // app.mount('#app')
-
-Vue.component('masked-input', MaskedInput);
