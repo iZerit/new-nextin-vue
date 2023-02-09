@@ -7,6 +7,10 @@
 //
 
 
+$(document).ready(function () {
+    $("#phone-mask").inputmask("(99)-999-99-99");
+});
+
 
 $(document).ready(function(){
 
@@ -124,5 +128,4 @@ $(document).ready(function(){
     // footer to map  ^^^^^^^^^
 
 })
-
 

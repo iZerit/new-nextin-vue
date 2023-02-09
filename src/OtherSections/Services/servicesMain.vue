@@ -52,47 +52,53 @@
           <div class="service_first_row">
             <div class="row">
 
-              <!-- web design  -->
+              <!-- webdesign  -->
 
               <div class="first_card col-lg-4 col-md-4 col-sm-6 aos-init">
                 <div class="icon_title d-flex">
-                  <div class="first_icon">
-                    <i class="fa-solid fa-pen"></i>
-                  </div>
-                  <a href="./services/service_design.html"><h3 class="mt-3">Web design</h3></a>
+                  <router-link to="/xizmatlar/web-design">
+                    <div class="first_icon">
+                      <i class="fa-solid fa-pen"></i>
+                    </div>
+                  </router-link>
+
+                  <router-link to="./xizmatlar/web-design"><h3 class="mt-3">Web design</h3></router-link>
                 </div>
                 <div class="card_text mt-2">
                   <p>Nextin Web Studio veb-dizaynerlar jamoasi bilan faxrlanadi, ular o'zlarining ko'p
                     yillik tajribalarini yaratishda o'tkazadilar ...</p>
-                  <a href="./services/service_design.html">To'liq ma'lumot</a>
+                  <router-link to="/xizmatlar/web-design">To'liq ma'lumot</router-link>
                 </div>
               </div>
 
-              <!-- web design  -->
+              <!-- webdesign  -->
 
 
 
 
 
-              <!-- web programm  -->
+              <!-- webprogramm  -->
 
               <div class="first_card col-lg-4 col-md-4 col-sm-6 aos-init">
                 <div class="icon_title d-flex">
-                  <div class="first_icon">
-                    <i class="fa-solid fa-code"></i>
-                  </div>
-                  <a href="./services/web_programming.html"> <h3 class="mt-3">Web dasturlash</h3></a>
+                  <router-link to="/xizmatlar/web-dasturlash">
+                    <div class="first_icon">
+                      <i class="fa-solid fa-code"></i>
+                    </div>
+                  </router-link>
+
+                  <router-link to="/xizmatlar/web-dasturlash"> <h3 class="mt-3">Web dasturlash</h3></router-link>
                 </div>
                 <div class="card_text mt-2">
                   <p>"Veb dasturlash" atamasi internet uchun veb-sayt yoki veb-ilovaning butun
                     rivojlanishini o'z ichiga oladi ...
                   </p>
-                  <a href="./services/web_programming.html">To'liq ma'lumot</a>
+                  <router-link to="/xizmatlar/web-dasturlash">To'liq ma'lumot</router-link>
 
                 </div>
               </div>
 
-              <!-- web programm  -->
+              <!-- webprogramm  -->
 
 
 
@@ -149,16 +155,18 @@
 
               <div class=" aos-init first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
-                  <div class="first_icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </div>
-                  <h3 class="mt-3">SEO optimizatsiya</h3>
+                  <router-link to="/xizmatlar/seo-optimizatsiya">
+                    <div class="first_icon">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </router-link>
+                  <router-link to="/xizmatlar/seo-optimizatsiya"><h3 class="mt-3">SEO optimizatsiya</h3></router-link>
                 </div>
                 <div class="card_text mt-2">
                   <p>Bizning Nextin Web Studio jamoasi veb-saytni optimallashtirish mazmuniga kelganda
                     uzoq muddatli tajribaga ega. ...
                   </p>
-                  <a href="#">To'liq ma'lumot</a>
+                  <router-link to="/xizmatlar/seo-optimizatsiya">To'liq ma'lumot</router-link>
 
                 </div>
               </div>
