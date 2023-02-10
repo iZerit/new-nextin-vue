@@ -1,6 +1,6 @@
 <template>
 
-  <section class="">
+  <section>
     <div class="container">
       <div class="services_div">
         <div class="services_inner_div">
@@ -47,7 +47,7 @@
 
 
 
-          <!-- service second row vvvv -->
+          <!-- service second row  -->
 
           <div class="service_first_row">
             <div class="row">
@@ -71,13 +71,13 @@
                 </div>
               </div>
 
-              <!-- webdesign  -->
+              <!-- web design  -->
 
 
 
 
 
-              <!-- webprogramm  -->
+              <!-- web programm  -->
 
               <div class="first_card col-lg-4 col-md-4 col-sm-6 aos-init">
                 <div class="icon_title d-flex">
@@ -98,7 +98,7 @@
                 </div>
               </div>
 
-              <!-- webprogramm  -->
+              <!-- web programm  -->
 
 
 
