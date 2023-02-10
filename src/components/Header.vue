@@ -25,7 +25,7 @@
             <router-link class="nav-link" to="/">Bosh sahifa</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Jamoa</a>
+            <router-link class="nav-link" to="/jamoa">Jamoa</router-link>
           </li>
 
           <li class="nav-item">
