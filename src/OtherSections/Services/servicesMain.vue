@@ -189,7 +189,7 @@
                   <p>Internetning rivojlanishi bilan - internet elektron biznesining rivojlanishi ham
                     oshib bormoqda....
                   </p>
-                  <a href="#">To'liq ma'lumot</a>
+                  <router-link to="/">To'liq ma'lumot</router-link>
 
                 </div>
               </div>
@@ -213,7 +213,7 @@
                     ko'rinmas
                     narsa - bu ...
                   </p>
-                  <a href="#">To'liq ma'lumot</a>
+                  <router-link to="/">To'liq ma'lumot</router-link>
 
                 </div>
               </div>
