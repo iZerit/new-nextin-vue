@@ -5,7 +5,7 @@
   <div class="main d-flex justify-content-center mb-5 mt-5">
     <div class="profile-card mb-5">
       <div class="img">
-        <img src="src/assets/team/shohruxTem.jpg">
+        <img src="src/assets/team/shohruxTem.jpg" alt="shohrux">
 
       </div>
       <div class="caption">
@@ -21,7 +21,7 @@
     </div>
     <div class="profile-card mb-5">
       <div class="img">
-        <img src="src/assets/team/MuhammadaminTeam.jpg">
+        <img src="src/assets/team/MuhammadaminTeam.jpg" alt="Muhammadamin">
       </div>
       <div class="caption">
         <h3>Muhammadamin Shukuraliyev</h3>
@@ -35,7 +35,7 @@
     </div>
     <div class="profile-card mb-5">
       <div class="img">
-        <img src="src/assets/team/AbduqodirTeam.png">
+        <img src="src/assets/team/AbduqodirTeam.png" alt="Abduqodir">
       </div>
       <div class="caption">
         <h3>Abduqodir Khamroqulov</h3>
@@ -49,7 +49,7 @@
     </div>
     <div class="profile-card mb-5">
       <div class="img">
-        <img src="src/assets/team/ibrokhimTeam.png">
+        <img src="src/assets/team/ibrokhimTeam.png" alt="ibrokhim">
       </div>
       <div class="caption">
         <h3>Ibrokhim Suleymanov</h3>
