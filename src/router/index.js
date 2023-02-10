@@ -30,11 +30,11 @@ const router = createRouter({
       name: "xizmatlar-seo-optimizatsiya",
       component : ()=> import('../OtherSections/Services/ServicesSeoOpt.vue')
     },
-    {
-      path: "/jamoa",
-      name: "jamoa",
-      component : ()=> import('../OtherSections/Team.vue')
-    },
+    // {
+    //   path: "/jamoa",
+    //   name: "jamoa",
+    //   component : ()=> import('../OtherSections/Team.vue')
+    // },
   ],
   scrollBehavior(to, from, savedPosition) {
     return new Promise((resolve, reject) => {
