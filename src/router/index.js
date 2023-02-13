@@ -13,7 +13,7 @@ const router = createRouter({
     {
       path: "/xizmatlar",
       name: "xizmatlar",
-      component : ()=> import('../OtherSections/Services/ServicesMain.vue')
+      component : ()=> import('../OtherSections/Services/ServicesMainBlank.vue')
     },
     {
       path: "/xizmatlar/web-design",
