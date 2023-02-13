@@ -62,7 +62,7 @@
         </li>
 
         <li class="nav-item offcanvas-nav-item">
-          <router-link class="sitenav-item-link " to="/">Jamoa</router-link>
+          <router-link class="sitenav-item-link " to="/jamoa">Jamoa</router-link>
         </li>
         <li class="nav-item offcanvas-nav-item">
           <router-link class="sitenav-item-link" to="/">Narxlar</router-link>
