@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/HomePage.vue";
-import ServicesMain from "../OtherSections/Services/ServicesMain.vue"
 
 
 const router = createRouter({
@@ -14,7 +13,7 @@ const router = createRouter({
     {
       path: "/xizmatlar",
       name: "xizmatlar",
-      component : ServicesMain
+      component : ()=> import('../OtherSections/Services/ServicesMain.vue')
     },
     {
       path: "/xizmatlar/web-design",
