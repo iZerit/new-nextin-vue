@@ -13,9 +13,9 @@
           <p>Nextin WS asoschisi, Back-end dasturchi.</p>
 
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/nextinws"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/shokhrukh_malikov/"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/shokhrukh_malikov"><i class="fab fa-telegram"></i></a>
           </div>
         </div>
       </div>
@@ -27,9 +27,9 @@
           <h3>Muhammadamin Shukuraliyev</h3>
           <p>Back-end Developer</p>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100072760243759"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/shukural1yev_o4/"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/iOutiso"><i class="fab fa-telegram"></i></a>
           </div>
         </div>
       </div>
@@ -41,9 +41,9 @@
           <h3>Abduqodir Khamroqulov</h3>
           <p>Back-end Developer</p>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/nextinws"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/moon.okean/"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/Symfony_dev"><i class="fab fa-telegram"></i></a>
           </div>
         </div>
       </div>
@@ -55,9 +55,9 @@
           <h3>Ibrokhim Suleymanov</h3>
           <p>Front-end Developer</p>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100074052992800"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/auxetan/"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/iZerit"><i class="fab fa-telegram"></i></a>
           </div>
         </div>
       </div>
