@@ -48,21 +48,22 @@
   <!-- header for scrool down  -->
 
   <!-- offcanvas for header burger menu -->
-  <div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
     <div class="offcanvas-header">
       <a href="#" class="offcanvas-title "><img src="" alt=""></a>
       <button type="button" class="btn-close text-reset close-but flex-end"
               data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-      <ul class="nav-pills navbar-nav justify-content-end">
+    <div class="offcanvas-body uk-offcanvas-bar">
+      <ul class="nav-pills navbar-nav justify-content-end uk-nav uk-nav-default">
 
         <li class="nav-item offcanvas-nav-item">
-          <router-link class="sitenav-item-link" to="/">Bosh sahifa</router-link>
+
+          <router-link  to="/"> <a class="sitenav-item-link">Bosh sahifa</a></router-link>
         </li>
 
         <li class="nav-item offcanvas-nav-item">
-          <router-link class="sitenav-item-link " to="/jamoa">Jamoa</router-link>
+          <router-link  class="sitenav-item-link " to="/jamoa" >Jamoa</router-link>
         </li>
         <li class="nav-item offcanvas-nav-item">
           <router-link class="sitenav-item-link" to="/">Narxlar</router-link>

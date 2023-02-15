@@ -4,7 +4,7 @@
     <div class="d-flex row justify-content-between align-items-center">
       <div class="form_inner col-lg-6 col-md-6 col-sm-12">
         <form action="" class="form" data-netlify="true"  name="contact"
-              method="POST" data-netlify-recaptcha="true">
+              method="POST" data-netlify-recaptcha="true" netlify>
           <h1 class="text-center">Biz bilan bog'lanish</h1>
           <div class="form_input">
             <input name="name" type="text" placeholder="ism" class="form-control ">
@@ -20,7 +20,7 @@
           <div class="mt-3" data-netlify-recaptcha="true"></div>
 
           <div class="form_buttons d-flex justify-content-between">
-            <button class="form_button btn service_sec_but mt-3 mb-3">Yuborish</button>
+            <button type="submit" class="form_button btn service_sec_but mt-3 mb-3">Yuborish</button>
             <button id="show_div_but" type="button"
                     class="btn service_sec_but mt-3 mb-3 form_second_button">Xaritada ko'rish</button>
             <button id="hide_div_but" type="button" class="btn service_sec_but mt-3 mb-3 hide_map">Xaritani

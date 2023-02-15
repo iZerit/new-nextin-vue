@@ -12,6 +12,13 @@ $(document).ready(function () {
 });
 
 
+
+
+
+
+
+
+
 $(document).ready(function(){
 
     // map show for mobile
