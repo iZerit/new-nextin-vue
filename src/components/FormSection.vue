@@ -4,13 +4,13 @@
     <div class="d-flex row justify-content-between align-items-center">
       <div class="form_inner col-lg-6 col-md-6 col-sm-12">
         <form  class="form" name="contact"
-              netlify><input type="hidden" name="form-name" value="contact">
+             data-netlify="true"><input type="hidden" name="form-name" value="contact">
           <h1 class="text-center">Biz bilan bog'lanish</h1>
           <div class="form_input">
             <input name="name" type="text" placeholder="ism" class="form-control ">
           </div>
           <div class="form_input">
-            <input name="email" type="text " placeholder="E-mail" class="form-control">
+            <input name="email" type="email" placeholder="E-mail" class="form-control">
           </div>
           <div class="form_input">
             <input name="phone" id="phone-mask" type="text" placeholder="Telefon raqam"
