@@ -3,8 +3,8 @@
   <section class="form_section container mb-5" id="formsection">
     <div class="d-flex row justify-content-between align-items-center">
       <div class="form_inner col-lg-6 col-md-6 col-sm-12">
-        <form action="" class="form" data-netlify="true"  name="contact"
-              method="POST" data-netlify-recaptcha="true" netlify>
+        <form action="" class="form" name="contact"
+               netlify>
           <h1 class="text-center">Biz bilan bog'lanish</h1>
           <div class="form_input">
             <input name="name" type="text" placeholder="ism" class="form-control ">
