@@ -4,7 +4,7 @@
     <div class="d-flex row justify-content-between align-items-center">
       <div class="form_inner col-lg-6 col-md-6 col-sm-12">
         <form  class="form" name="contact"
-               method="POST" data-netlify-recaptcha="true" data-netlify="true" netlify><input type="hidden" name="form-name" value="contact">
+              netlify><input type="hidden" name="form-name" value="contact">
           <h1 class="text-center">Biz bilan bog'lanish</h1>
           <div class="form_input">
             <input name="name" type="text" placeholder="ism" class="form-control ">
