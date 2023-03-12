@@ -35,6 +35,11 @@ const router = createRouter({
       name: "jamoa",
       component : ()=> import('../OtherSections/Team.vue')
     },
+    {
+      path: "/narxlar",
+      name: "narx",
+      component : ()=> import('../OtherSections/Price.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 }

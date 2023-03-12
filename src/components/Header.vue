@@ -27,12 +27,8 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/jamoa">Jamoa</router-link>
           </li>
-
           <li class="nav-item">
-            <a class="nav-link" href="#">Bizning ishlar</a>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/">Narxlar</router-link>
+            <router-link class="nav-link" to="/narxlar">Narxlar</router-link>
           </li>
           <li class="nav-item ">
             <router-link class="nav-link" to="/xizmatlar">Xizmatlar</router-link>
@@ -66,7 +62,7 @@
           <router-link  class="sitenav-item-link " to="/jamoa" >Jamoa</router-link>
         </li>
         <li class="nav-item offcanvas-nav-item">
-          <router-link class="sitenav-item-link" to="/">Narxlar</router-link>
+          <router-link class="sitenav-item-link" to="/narxlar">Narxlar</router-link>
         </li>
         <li class="nav-item offcanvas-nav-item offcanvas-dropdown-menu" >
           <router-link class="sitenav-item-link" style="padding:0;" to="/xizmatlar">Xizmatlar</router-link>

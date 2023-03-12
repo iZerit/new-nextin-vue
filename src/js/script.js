@@ -1,15 +1,18 @@
 // // inputmask
-// var phoneMask = IMask(
-//     document.getElementById('phone-mask'), {
-//         mask: '+{998}(00)000-00-00'
-//     });
+$(document).ready(function (){
+    var phoneMask = IMask(
+        document.getElementById('phone-mask'), {
+            mask: '+{998}(00)000-00-00'
+        });
+})
+
 // // inputmask
 //
 
 
-$(document).ready(function () {
-    $("#phone-mask").inputmask("(99)-999-99-99");
-});
+// $(document).ready(function () {
+//     $("#phone-mask").inputmask("(99)-999-99-99");
+// });
 
 
 
