@@ -6,8 +6,6 @@ $(document).ready(function (){
         });
 })
 
-// // inputmask
-//
 
 
 // $(document).ready(function () {
