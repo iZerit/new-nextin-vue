@@ -1342,6 +1342,7 @@ html{
     background-color: #ff1d1d;
     transform: scale(1.025);
     z-index: 2;
+    transition: all .6s;
 }
 .grid-1-5:hover:before, .grid-1-5:hover:after {
     content: "";
@@ -1362,7 +1363,6 @@ html{
 .grid-1-5:hover .button {
     background-color: #222249;
     color: white;
-    *zoom: 1;
     background-size: 100%;
     border: 1px solid #222249;
 }
