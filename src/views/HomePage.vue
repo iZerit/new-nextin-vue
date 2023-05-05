@@ -1,7 +1,6 @@
 <template>
 <HeroSection/>
   <ServicesSection/>
-  <PriceList/>
   <FormSection/>
 </template>
 
