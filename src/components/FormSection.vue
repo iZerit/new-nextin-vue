@@ -4,7 +4,7 @@
     <div class="d-flex row justify-content-between align-items-center">
       <div class="form_inner col-lg-6 col-md-6 col-sm-12">
         <form netlify class="form" name="contact" method="POST">
-         <input type="hidden" name="contact" value="contact">
+    
  
           <h1 class="text-center">Biz bilan bog'lanish</h1>
           <div class="form_input">
