@@ -3,7 +3,7 @@
   <section class="form_section container mb-5" id="formsection">
     <div class="d-flex row justify-content-between align-items-center">
       <div class="form_inner col-lg-6 col-md-6 col-sm-12">
-        <form  class="form" name="contact"
+        <form netlify class="form" name="contact"
              data-netlify="true"><input type="hidden" name="form-name" value="contact">
           <h1 class="text-center">Biz bilan bog'lanish</h1>
           <div class="form_input">
