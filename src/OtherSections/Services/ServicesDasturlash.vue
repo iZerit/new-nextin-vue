@@ -4,7 +4,6 @@
       <div class="row">
         <div class="programming_inner">
           <div class="services_title text-center mb-5 mt-5">
-<<<<<<< HEAD
             <h2>{{ $t('programming_title') }}</h2>
           </div>
           <div class="programming_info text-center">
@@ -15,27 +14,6 @@
   <div class="service_inner_webdesign">
           <div class="services_title text-center mb-5 mt-5">
             <h2>{{ $t('markup_title') }}</h2>
-=======
-            <h2>Web Dasturlash</h2>
-          </div>
-          <div class="programming_info text-center">
-            <p>"Web-dasturlash" atamasi internetdan foydalanish uchun veb-sayt yoki veb-ilovaning butun
-              rivojlanishini o'z ichiga oladi. Ko'pincha "fon ishi" yoki ma'muriyat saytini ishlab
-              chiqish bilan bog'liq bo'lib, u ma'muriyat foydalanuvchilariga tarkibni
-              to'g'ridan-to'g'ri kiritish, o'chirish va tahrirlashni osonlashtirish va
-              dizayn-ma'muriyat o'rtasidagi mukammal yozishmalarni ta'minlashga qaratilgan.
-              Veb-dasturlashning butun jarayoni qo'llanilishiga qarab bir nechta toifalarga
-              tasniflangan bir nechta dastur tillarini birlashtirishni o'z ichiga oladi: belgilash
-              tillari (HTML, XHTML va XML), skript tillari (PHP, JavaScript, Jscript, JQuery, Pyton va
-              boshqalar). ) va relyatsion so'rovlar tillari (MySQL, SQL, Oracle, Apache va boshqalar).
-            </p>
-          </div>
-        </div>
-
-        <div data-aos="zoom-out" class="service_inner_webdesign">
-          <div class="services_title text-center mb-5 mt-5">
-            <h2>Belgilash tillari</h2>
->>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
           </div>
           <div class=" blogss row d-flex align-items-center">
             <div class="img_service_section mb-4 col-lg-2 col-md-6 col-sm-12 ">
@@ -45,15 +23,7 @@
 
             <div class="text_div_first col-lg-10 col-md-6 col-sm-12 ">
 
-<<<<<<< HEAD
               <p>{{ $t('markup_intro') }}</p>
-=======
-              <p>Belgilash tillari hujjat tuzilishini vizual tavsiflash va vizual tavsiflash uchun
-                ishlatiladi. Bu hujjat ichidagi elementlar bilan ishlashni osonlashtiradi. Belgilash
-                tilining eng mashhur vakillari HTML, XHTML va XML hisoblanadi. Ushbu tillarning har
-                biri veb-ilovalar va mijozlarning rivojlanishi va veb-ishlab chiquvchining
-                ehtiyojlariga javob beradigan o'z til versiyasiga ega.</p>
->>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
             </div>
 
           </div>
@@ -65,11 +35,7 @@
 
 
 
-<<<<<<< HEAD
   <div class="service_inner_webdesign">
-=======
-        <div data-aos="zoom-out" class="service_inner_webdesign">
->>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
           <div class="services_title text-center mb-5 mt-5">
             <h2>Skript tillari</h2>
           </div>
@@ -99,11 +65,7 @@
 
 
 
-<<<<<<< HEAD
   <div class="service_inner_webdesign mb-5">
-=======
-        <div data-aos="zoom-out" class="service_inner_webdesign mb-5">
->>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
           <div class="services_title text-center mb-5 mt-5">
             <h2>Relyatsion ma'lumotlar bazasini boshqarish tili</h2>
           </div>

@@ -6,7 +6,6 @@
         <form netlify class="form" name="contact" method="POST">
     
  
-<<<<<<< HEAD
           <h1 class="text-center">{{ $t('contact') }}</h1>
           <div class="form_input">
             <input name="name" type="text" :placeholder="$t('name_placeholder')" class="form-control ">
@@ -17,35 +16,15 @@
           <div class="form_input">
        <input name="phone" id="phone-mask" type="text" :placeholder="$t('phone_placeholder')"
          class="form-control">
-=======
-          <h1 class="text-center">Biz bilan bog'lanish</h1>
-          <div class="form_input">
-            <input name="name" type="text" placeholder="ism" class="form-control ">
-          </div>
-          <div class="form_input">
-            <input name="email" type="email" placeholder="E-mail" class="form-control">
-          </div>
-          <div class="form_input">
-            <input name="phone" id="phone-mask" type="text" placeholder="Telefon raqam"
-                   class="form-control">
->>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
           </div>
 
           <div class="mt-3" data-netlify-recaptcha="true"></div>
 
           <div class="form_buttons d-flex justify-content-between">
-<<<<<<< HEAD
       <button type="submit" class="form_button btn service_sec_but mt-3 mb-3">{{ $t('send') }}</button>
       <button id="show_div_but" type="button"
         class="btn service_sec_but mt-3 mb-3 form_second_button">{{ $t('view_map') }}</button>
       <button id="hide_div_but" type="button" class="btn service_sec_but mt-3 mb-3 hide_map">{{ $t('close_map') }}</button>
-=======
-            <button type="submit" class="form_button btn service_sec_but mt-3 mb-3">Yuborish</button>
-            <button id="show_div_but" type="button"
-                    class="btn service_sec_but mt-3 mb-3 form_second_button">Xaritada ko'rish</button>
-            <button id="hide_div_but" type="button" class="btn service_sec_but mt-3 mb-3 hide_map">Xaritani
-              yopish</button>
->>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
           </div>
         </form>
       </div>
