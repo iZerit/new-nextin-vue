@@ -9,15 +9,8 @@
         <div class="text_div_first col-lg-6 col-md-6 col-sm-12 text-center ">
 
           <p>
-<<<<<<< HEAD
             {{ $t('hero_description') }}
-            </p>
-=======
-            Nextin Web Studio - bu veb-saytlar, internet xizmatlari, grafik yechimlar va veb-dizayn,
-            dasturlash va grafikaning boshqa jihatlarini yaratish bilan bog'liq barcha talablaringizni
-            qondira oladigan yosh, ambitsiyali va ijodiy veb-ishlab chiquvchilar, dasturchilar va grafik
-            dizaynerlar jamoasi.</p>
->>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
+          </p>
         </div>
         <div class="img_div_first col-lg-6 col-md-6 col-sm-12">
 
