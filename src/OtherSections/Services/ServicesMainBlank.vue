@@ -5,15 +5,41 @@
       <div class="services_div">
         <div class="services_inner_div">
           <div class="services_title text-center mb-5 mt-5">
+<<<<<<< HEAD
             <h2>{{ $t('main_services_title') }}</h2>
+=======
+            <h2>Nextin Web Studio Xizmatlari</h2>
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
           </div>
 
 
           <!-- service first row info  -->
 
           <div class="services_text text-center">
+<<<<<<< HEAD
             <p>{{ $t('main_services_intro1') }}</p>
             <p>{{ $t('main_services_intro2') }}</p>
+=======
+            <p>Nextin Web Studio sizga birinchi navbatda internet-marketing xizmatlarini taklif qiladi, ammo
+              bizning taklifimiz grafik dizaynni o'z ichiga oladi, biz bunga ham katta e'tibor beramiz.
+              Internet-marketing xizmatlari doirasida biz veb-dizayn, veb-ishlab chiqish, SEO
+              optimallashtirish va veb uchun kopirayterni, bir so'z bilan aytganda, barcha ma'muriy
+              ("fon") ish va optimallashtirish bilan to'liq veb-sayt dizaynini taklif qilamiz. Yuqorida
+              aytib o'tganimizdek, biz grafik dizaynga katta e'tibor beramiz. Aniqrog'i, grafik dizayn
+              veb-sayt uchun grafik elementlarni yaratishda qo'llaniladigan barcha narsalar uchun juda
+              muhimdir va biz grafik dizayn sohasida ega bo'lgan bilim va ijodkorlik veb-dizaynga osongina
+              qo'llaniladi, chunki u oddiygina bitta. boshqa tasavvur qilish mumkin. Biz foydalanadigan
+              dasturiy ta'minot asosan Adobe Photoshop va Adobe Illustrator kabi Adobe paketlaridan,
+              shuningdek Corel Draw. Grafik dizayn biz 3D Max Studio dasturida amalga oshiradigan 3D
+              modellashni o'z ichiga oladi. Raqamli fotosuratlarni qayta ishlash bizning taklifimizda
+              alohida o'rin tutadi. Qayta ishlash jarayonida biz mijozning xohishiga ko'ra fotosuratga
+              grafik ishlov berishni nazarda tutamiz.</p>
+            <p>Ushbu xizmatlardan tashqari biz Wordpress va OpenCard dasturlarini ham taklif etamiz. Bu ikki
+              tizim Wordpress ning OpenCard ga qaraganda ustunlikka ega ekanligini hisobga olsak, dunyodagi eng
+              mashhur CMS tizimi hisoblanadi. Agar sizga kontentni osongina yangilash uchun barcha
+              ma'muriyatga ega tezkor veb-sayt kerak bo'lsa, unda bu ikki tizim siz uchun eng yaxshi
+              alternativ hisoblanadi.</p>
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
             <!-- <p>Bir oz eskirgan va SEO optimallashtirishning to'satdan bosib olinishi ostida yengib o'tgan
                 bo'lsa-da, Flash taqdimotlari har doim ularning xilma-xilligi va animatsiyalariga katta
                 e'tibor qaratgan. Ko'pchilikka ma'lum bo'lgan brend vakili ekanligingizni yoki ortiqcha
@@ -37,7 +63,11 @@
 
               <!-- webdesign  -->
 
+<<<<<<< HEAD
               <div class="first_card col-lg-4 col-md-4 col-sm-6">
+=======
+              <div class="first_card col-lg-4 col-md-4 col-sm-6 aos-init">
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
                 <div class="icon_title d-flex">
                   <router-link to="/xizmatlar/web-design">
                     <div class="first_icon">
@@ -62,7 +92,11 @@
 
               <!-- web programm  -->
 
+<<<<<<< HEAD
               <div class="first_card col-lg-4 col-md-4 col-sm-6">
+=======
+              <div class="first_card col-lg-4 col-md-4 col-sm-6 aos-init">
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
                 <div class="icon_title d-flex">
                   <router-link to="/xizmatlar/web-dasturlash">
                     <div class="first_icon">
@@ -91,7 +125,11 @@
 
               <!-- google ads  -->
 
+<<<<<<< HEAD
               <div class="first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
+=======
+              <div class=" aos-init first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
                 <div class="icon_title d-flex">
                   <div class="first_icon">
                     <i class="fa-brands fa-google"></i>
@@ -114,7 +152,11 @@
 
               <!-- e-mail marketing  -->
 
+<<<<<<< HEAD
               <div class="first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
+=======
+              <div class="aos-init first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
                 <div class="icon_title d-flex">
                   <div class="first_icon">
                     <i class="fa-solid fa-envelope"></i>
@@ -136,7 +178,11 @@
 
               <!-- seo optimisation  -->
 
+<<<<<<< HEAD
               <div class="first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
+=======
+              <div class=" aos-init first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
                 <div class="icon_title d-flex">
                   <router-link to="/xizmatlar/seo-optimizatsiya">
                     <div class="first_icon">
@@ -161,7 +207,11 @@
 
               <!-- internet do'kon  -->
 
+<<<<<<< HEAD
               <div class="first_card col-lg-4 col-md-4 col-sm-6">
+=======
+              <div class="first_card col-lg-4 col-md-4 col-sm-6 aos-init">
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
                 <div class="icon_title d-flex">
                   <div class="first_icon">
                     <i class="fa-solid fa-cart-shopping"></i>
@@ -184,7 +234,11 @@
 
               <!-- internet marketing  -->
 
+<<<<<<< HEAD
               <div class="first_card col-lg-4 col-md-4 col-sm-6 mb-5">
+=======
+              <div class="first_card col-lg-4 col-md-4 col-sm-6 aos-init mb-5">
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
                 <div class="icon_title d-flex">
                   <div class="first_icon">
                     <i class="fa-solid fa-arrow-trend-up"></i>

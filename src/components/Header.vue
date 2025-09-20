@@ -22,6 +22,7 @@
         <router-link class="logo-img" to="/"><img class="img-fluid" src="../assets/MainLogo.png" alt=""></router-link>
         <ul class="navbar-nav home2_for_mobile_menu" id="home2_for_mobile_menu">
           <li class="nav-item">
+<<<<<<< HEAD
             <router-link class="nav-link" to="/">{{$t('home')}}</router-link>
           </li>
           <li class="nav-item">
@@ -32,17 +33,32 @@
           </li>
           <li class="nav-item ">
             <router-link class="nav-link" to="/xizmatlar">{{$t('services')}}</router-link>
+=======
+            <router-link class="nav-link" to="/">Bosh sahifa</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/jamoa">Jamoa</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/narxlar">Narxlar</router-link>
+          </li>
+          <li class="nav-item ">
+            <router-link class="nav-link" to="/xizmatlar">Xizmatlar</router-link>
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
           </li>
         </ul>
         <button  class="shadow-none navbar-toggler custom-toggler home2_for_mobile  navbar-toggler-but" type="button"
                  data-bs-toggle="offcanvas" id="home2_for_mobile" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
+<<<<<<< HEAD
         <!-- Language Switcher -->
         <select v-model="$i18n.locale" class="form-select w-auto ms-3" style="display:inline-block;">
           <option value="uz">O'zbek</option>
           <option value="ru">Русский</option>
         </select>
+=======
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
       </div>
     </nav>
   </header>
@@ -57,6 +73,7 @@
     </div>
     <div class="offcanvas-body uk-offcanvas-bar">
       <ul class="nav-pills navbar-nav justify-content-end uk-nav uk-nav-default">
+<<<<<<< HEAD
         <li class="nav-item offcanvas-nav-item">
           <router-link  to="/"> <a class="sitenav-item-link">{{$t('home')}}</a></router-link>
         </li>
@@ -75,6 +92,22 @@
             <option value="uz">O'zbek</option>
             <option value="ru">Русский</option>
           </select>
+=======
+
+        <li class="nav-item offcanvas-nav-item">
+
+          <router-link  to="/"> <a class="sitenav-item-link">Bosh sahifa</a></router-link>
+        </li>
+
+        <li class="nav-item offcanvas-nav-item">
+          <router-link  class="sitenav-item-link " to="/jamoa" >Jamoa</router-link>
+        </li>
+        <li class="nav-item offcanvas-nav-item">
+          <router-link class="sitenav-item-link" to="/narxlar">Narxlar</router-link>
+        </li>
+        <li class="nav-item offcanvas-nav-item offcanvas-dropdown-menu" >
+          <router-link class="sitenav-item-link" style="padding:0;" to="/xizmatlar">Xizmatlar</router-link>
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
         </li>
       </ul>
     </div>
@@ -90,6 +123,7 @@ export default {
 </script>
 
 <style scoped>
+<<<<<<< HEAD
 .form-select.w-auto,
 select.form-select.w-auto {
   background: linear-gradient(90deg, #e53935 0%, #1e88e5 100%);
@@ -127,4 +161,7 @@ select.form-select.w-auto:focus {
   outline: none;
   box-shadow: 0 0 0 2px #e53935;
 }
+=======
+
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
 </style>

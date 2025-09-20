@@ -9,19 +9,27 @@
 html{
     scroll-behavior: smooth;
 }
+<<<<<<< HEAD
 /* 
 .new_first_blog, .web_programming, .footere{
+=======
+
+.new_first_blog, .service_section, .web_programming, .footere{
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
     overflow-x: hidden;
     overflow: hidden;
     width: 100%;
 }
 
+<<<<<<< HEAD
 .service_section {
     width: 100%;
     position: relative;
     /* Remove overflow:hidden to allow content to show */
 /* } */ 
 
+=======
+>>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
 
 
 ::selection{
