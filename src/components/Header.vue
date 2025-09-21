@@ -1,4 +1,16 @@
 <style scoped>
+@media (min-width: 992px) {
+  .navbar-nav {
+    display: flex !important;
+  }
+  .navbar-toggler,
+  .offcanvas {
+    display: none !important;
+  }
+  .home2_for_mobile_menu {
+    display: flex !important;
+  }
+}
 @media (max-width: 991px) {
   .home2 .lang-switcher-btns {
     display: none !important;
@@ -62,11 +74,36 @@
 <template>
   <!-- default header and for mobile -->
   <header class="site-header sticky-top home1" id="home1">
-    <nav class="navbar navbar-light">
+    <nav class="navbar navbar-light navbar-expand-lg">
       <div class="container">
         <router-link class="logo-img" to="/">
           <img class="img-fluid" src="../assets/MainLogo.png" alt="" />
         </router-link>
+        <ul class="navbar-nav home2_for_mobile_menu" id="home1_navbar_menu">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/">{{$t('home')}}</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/jamoa">{{$t('team')}}</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/narxlar">{{$t('prices')}}</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/xizmatlar">{{$t('services')}}</router-link>
+          </li>
+        </ul>
+        <!-- Language Switcher Buttons -->
+        <div class="lang-switcher-btns">
+          <button
+            v-for="lang in langs"
+            :key="lang.value"
+            :class="['lang-btn', { selected: $i18n.locale === lang.value }]"
+            @click="setLocale(lang.value)"
+          >
+            {{ lang.label }}
+          </button>
+        </div>
         <button class="shadow-none navbar-toggler custom-toggler navbar-toggler-but" type="button"
           data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
