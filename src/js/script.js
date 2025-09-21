@@ -22,6 +22,7 @@ $(document).ready(function (){
 
 $(document).ready(function(){
 
+    console.log('script.js loaded: jQuery ready');
     // map show for mobile
     $("#show_div_but").click(function(){
         $("#map_divv").show();
@@ -60,7 +61,6 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 50){
             $('#btn-back-to-top').show();
-
         }else{
             $('#btn-back-to-top').hide();
         }

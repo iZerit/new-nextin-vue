@@ -9,27 +9,18 @@
 html{
     scroll-behavior: smooth;
 }
-<<<<<<< HEAD
-/* 
-.new_first_blog, .web_programming, .footere{
-=======
-
-.new_first_blog, .service_section, .web_programming, .footere{
->>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
+ .new_first_blog, .service_section, .web_programming, .footere{
     overflow-x: hidden;
     overflow: hidden;
     width: 100%;
 }
 
-<<<<<<< HEAD
 .service_section {
     width: 100%;
     position: relative;
     /* Remove overflow:hidden to allow content to show */
 /* } */ 
-
-=======
->>>>>>> 05d46dad3799576753843766fe1a0908541b75ca
+}
 
 
 ::selection{
@@ -454,7 +445,7 @@ div{
 
 
 .home1{
-    z-index: 999;
+    z-index: 100002;
     transition: all .7s ease;
     border-bottom: 1px solid #ff1d1d;
     border-radius: 15px;
@@ -462,7 +453,7 @@ div{
 
 .home2{
     display: none;
-    z-index: 999;
+    z-index: 100002;
     border-bottom: 1px solid #ff1d1d;
     border-radius: 15px;
     transition: all 1s ease;
@@ -623,6 +614,7 @@ header{
 .service_sec_but{
     padding: 9px;
     background-color: rgb(34, 34, 73);
+    z-index: 100003;
     color:white;
     transition: all .4s ease;
     border: 1px solid #ff1d1d;
@@ -1362,7 +1354,6 @@ html{
     content: "";
     position: absolute;
     background-color: #ff1d1d;
-    *zoom: 1;
     background-size: 100%;
     top: -2px;
     bottom: -2px;
@@ -1408,4 +1399,3 @@ html{
 }
 
 
-/*price*/

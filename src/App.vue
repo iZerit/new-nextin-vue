@@ -1,16 +1,14 @@
 <template>
 <Background/>
 
-
   <div class="main">
-    <Header/>
-<!--    main qatori boshladi-->
- <router-view/>
-    <!--    main qatori tugadi-->
-
-<Footer/>
+    <Header :locale="$i18n.locale"/>
+    <!-- main qatori boshladi -->
+    <router-view/>
+    <!-- main qatori tugadi -->
+    <Footer/>
   </div>
-  <!-- contianer tugadi -->
+  <!-- container tugadi -->
 
 </template>
 
