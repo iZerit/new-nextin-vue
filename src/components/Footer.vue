@@ -11,7 +11,6 @@
             </router-link>
           </div>
           <div class="footer_link_txt"><h3>{{ $t('footer_social') }}</h3></div>
-          <div class="footer_link_txt"><h3>{{ $t('footer_social') }}</h3></div>
           <div class="footer_links">
             <a href="https://www.facebook.com/nextinws" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com/nextin.uz/"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -20,7 +19,6 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="footer_link_txt mt-5">
-            <h3>{{ $t('footer_services') }}</h3>
             <h3>{{ $t('footer_services') }}</h3>
           </div>
           <ul class="footer_service_list">
@@ -36,7 +34,6 @@
         <div class="col-lg-4 col-md-6 col-xs-12">
           <div class="footer_link_txt mt-5">
             <h3>{{ $t('footer_contact') }}</h3>
-            <h3>{{ $t('footer_contact') }}</h3>
           </div>
           <ul class="footer_service_list">
             <li class="footer_location_li">
@@ -50,7 +47,6 @@
           </ul>
           <div class="footer_link_txt mt-5">
             <h3>{{ $t('footer_address') }}</h3>
-            <h3>{{ $t('footer_address') }}</h3>
           </div>
           <p>{{ $t('footer_address_text') }}</p>
           <button type="button" class="btn service_sec_but" id="footer_btn_map">{{ $t('view_map') }}</button>
@@ -59,7 +55,6 @@
 
       <div class="container copyright">
         <hr>
-  <p>{{ $t('footer_copyright') }}</p>
   <p>{{ $t('footer_copyright') }}</p>
       </div>
     </div>
