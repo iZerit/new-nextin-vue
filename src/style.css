@@ -1,3 +1,8 @@
+@media (max-width: 991px) {
+    .home1 .lang-switcher-btns {
+        display: none !important;
+    }
+}
 /* Global Language Switcher Buttons Styles */
 .lang-switcher-btns {
     display: flex;
