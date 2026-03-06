@@ -2,6 +2,8 @@
 {
   "welcome": "Xush kelibsiz!",
   "contact": "Biz bilan bog'lanish",
+  "orders": "Buyurtmalar",
+  "total": "Jami",
   "send": "Yuborish",
   "view_map": "Xaritada ko'rish",
   "close_map": "Xaritani yopish",
@@ -13,6 +15,8 @@
   "hero_description": "Nextin Web Studio - bu veb-saytlar, internet xizmatlari, grafik yechimlar va veb-dizayn, dasturlash va grafikaning boshqa jihatlarini yaratish bilan bog'liq barcha talablaringizni qondira oladigan yosh, ambitsiyali va ijodiy veb-ishlab chiquvchilar, dasturchilar va grafik dizaynerlar jamoasi.",
   "order": "Buyurtma",
   "service_prices": "Xizmatlar Narxi",
+  "tab_websites": "Veb-saytlar",
+  "tab_ads_materials": "Reklama va materiallar",
   "wordpress_landing": "Wordpress-da Landing Page",
   "wordpress_site": "Wordpress-da veb-sayt",
   "corporate_site": "Korporativ veb-sayt",
@@ -70,5 +74,6 @@
   "footer_contact": "Bog'lanish",
   "footer_address": "Manzil",
   "footer_address_text": "Sirdaryo Viloyati, Guliston Shahri, Guliston Ko'chasi 11A",
-  "footer_copyright": "Copyright © 2023 Nextin Web Studio"
+  "footer_copyright": "Copyright © 2026 Nextin Web Studio",
+  "Websites": "Web Saytlar"
 }

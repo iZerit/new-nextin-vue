@@ -2,6 +2,8 @@
 {
   "welcome": "Добро пожаловать!",
   "contact": "Связаться с нами",
+  "orders": "Заказы",
+  "total": "Итого",
   "send": "Отправить",
   "view_map": "Посмотреть на карте",
   "close_map": "Закрыть карту",
@@ -13,6 +15,8 @@
   "hero_description": "Nextin Web Studio - это команда молодых, амбициозных и креативных веб-разработчиков, программистов и графических дизайнеров, которые могут удовлетворить все ваши потребности, связанные с созданием веб-сайтов, интернет-услуг, графических решений и других аспектов веб-дизайна, программирования и графики.",
   "order": "Заказать",
   "service_prices": "Цены на услуги",
+  "tab_websites": "Веб-сайты",
+  "tab_ads_materials": "Реклама и материалы",
   "wordpress_landing": "Landing Page на Wordpress",
   "wordpress_site": "Веб-сайт на Wordpress",
   "corporate_site": "Корпоративный веб-сайт",
@@ -70,5 +74,6 @@
   "footer_contact": "Контакты",
   "footer_address": "Адрес",
   "footer_address_text": "Сырдарьинская область, город Гулистан, улица Гулистан 11А",
-  "footer_copyright": "Copyright © 2023 Nextin Web Studio"
+  "footer_copyright": "Copyright © 2026 Nextin Web Studio",
+  "Websites": "Веб-сайты"
 }
