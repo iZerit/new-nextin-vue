@@ -41,7 +41,7 @@
     <div class="order-box-header">
       <div>
         <strong>{{ $t('orders') }}</strong>
-        <span class="order-count">({{ orders.length }})</span>
+        <span class="order-count" style="color: white;">({{ orders.length }})</span>
       </div>
       <button class="order-clear" @click="clearOrders" aria-label="Clear orders">
         ✕
@@ -85,7 +85,7 @@ const tabs = [
   { key: 'ads', labelKey: 'tab_ads_materials' },
 ]
 
-const activeTab = ref('ads')
+const activeTab = ref('sites')
 
 const sections = [
   {
