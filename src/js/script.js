@@ -139,3 +139,6 @@ $(document).ready(function(){
 
 
 
+
+
+// for price script vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
