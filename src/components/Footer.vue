@@ -49,7 +49,7 @@
             <h3>{{ $t('footer_address') }}</h3>
           </div>
           <p>{{ $t('footer_address_text') }}</p>
-          <button type="button" class="btn service_sec_but" id="footer_btn_map">{{ $t('view_map') }}</button>
+          <!-- <button type="button" class="btn service_sec_but" id="footer_btn_map">{{ $t('view_map') }}</button> -->
         </div>
       </div>
 

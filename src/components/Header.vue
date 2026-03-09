@@ -44,33 +44,7 @@
   color: #ff1d1d;
 }
 </style>
-/* Language Switcher Buttons Styles */
-.lang-switcher-btns {
-  display: flex;
-  gap: 10px;
-}
-.lang-btn {
-  background: #222249;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 8px 20px;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 1em;
-  transition: background 0.2s, color 0.2s, font-size 0.2s;
-  outline: none;
-}
-.lang-btn.selected {
-  background: transparent;
-  color: #ff1d1d;
-  font-size: 1.25em;
-  box-shadow: none;
-}
-.lang-btn:hover {
-  background: transparent;
-  color: #ff1d1d;
-}
+
 <template>
   <!-- default header and for mobile -->
   <header class="site-header sticky-top home1" id="home1">
@@ -90,7 +64,7 @@
             <router-link class="nav-link" to="/narxlar">{{$t('prices')}}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/xizmatlar">{{$t('services')}}</router-link>
+            <router-link class="nav-link" :to="{ path: '/', hash: '#formsection' }">{{$t('contact')}}</router-link>
           </li>
         </ul>
         <!-- Language Switcher Buttons -->
@@ -129,7 +103,7 @@
             <router-link class="nav-link" to="/narxlar">{{$t('prices')}}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/xizmatlar">{{$t('services')}}</router-link>
+            <router-link class="nav-link" :to="{ path: '/', hash: '#formsection' }">{{$t('contact')}}</router-link>
           </li>
         </ul>
         <button class="shadow-none navbar-toggler custom-toggler home2_for_mobile navbar-toggler-but" type="button"
@@ -172,6 +146,9 @@
         </li>
         <li class="nav-item offcanvas-nav-item offcanvas-dropdown-menu">
           <router-link class="sitenav-item-link" style="padding:0;" to="/xizmatlar">{{$t('services')}}</router-link>
+        </li>
+        <li class="nav-item offcanvas-nav-item">
+          <router-link class="sitenav-item-link" style="padding:0;" :to="{ path: '/', hash: '#formsection' }">{{$t('contact')}}</router-link>
         </li>
         <!-- Language Switcher Buttons in Burger Menu -->
         <li class="nav-item mt-3">

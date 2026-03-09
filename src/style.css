@@ -656,7 +656,6 @@ header{
 .service_sec_but{
     padding: 9px;
     background-color: rgb(34, 34, 73);
-    z-index: 100003;
     color:white;
     transition: all .4s ease;
     border: 1px solid #ff1d1d;
@@ -1373,7 +1372,6 @@ html{
 }
 
 .grid-1-5 {
-    border: 2px solid #ff1d1d;
     width: 265px;
     border-radius: 0.375rem;
     height: 350px;
@@ -1387,15 +1385,20 @@ html{
 
 
 .grid-1-5:hover {
-    background-color: #ff1d1d;
     transform: scale(1.025);
     z-index: 2;
     transition: all .6s;
+
 }
+
+.card-inner{
+    color: red;
+}
+
+
 .grid-1-5:hover:before, .grid-1-5:hover:after {
     content: "";
     position: absolute;
-    background-color: #ff1d1d;
     background-size: 100%;
     top: -2px;
     bottom: -2px;
@@ -1408,8 +1411,6 @@ html{
     right: -2px;
 }
 .grid-1-5:hover .button {
-    background-color: #222249;
-    color: white;
     background-size: 100%;
     border: 1px solid #222249;
 }
@@ -1434,10 +1435,6 @@ html{
 .uppercase{
     font-size: 18px;
     color: #ff1d1d;
-}
-
-.grid-1-5:hover .uppercase{
-    color: #222249;
 }
 
 
