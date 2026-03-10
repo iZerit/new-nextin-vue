@@ -13,8 +13,7 @@
           </p>
         </div>
         <div class="img_div_first col-lg-6 col-md-6 col-sm-12">
-
-          <img class="img-fluid" src="../assets/blog_banner.png" alt="">
+          <img class="img-fluid" src="../assets/blog_banner.png" alt="Web design illustration" />
         </div>
       </div>
       <div class="scrool_div mb-5">
@@ -37,6 +36,3 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>

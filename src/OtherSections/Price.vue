@@ -41,13 +41,15 @@
                 <img class="card-logo" :src="logoInfo" alt="Info" />
                 <h2>{{ $t(item.titleKey) }}</h2>
                 <h3><span class="uppercase">{{ item.price }}</span></h3>
-                <a
-                  href="#"
-                  class="button"
-                  @click.stop.prevent="addOrder(item)"
-                >
-                  {{ $t('order') }}
-                </a>
+                <div class="price-card-actions">
+                  <a
+                    href="#"
+                    class="button"
+                    @click.stop.prevent="addOrder(item)"
+                  >
+                    {{ $t('order') }}
+                  </a>
+                </div>
               </div>
               <div class="card-face card-back">
                 <div class="card-back-content">
@@ -55,7 +57,7 @@
                   <button
                     type="button"
                     class="button button--small"
-                    @click.stop.prevent="toggleFlip(item.titleKey)"
+                    @click.stop.prevent="openInfo(item)"
                   >
                     {{ $t('more_info') }}
                   </button>
@@ -63,6 +65,43 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    v-if="activeInfo"
+    class="info-overlay"
+    @click.self="closeInfo"
+    tabindex="0"
+  >
+    <div class="info-card">
+      <div
+        class="card-inner"
+        :class="{ flipped: isInfoFlipped }"
+        @click.stop="isInfoFlipped = !isInfoFlipped"
+      >
+        <div class="card-face card-front">
+          <div class="info-face-body">
+            <img class="card-logo" :src="logoInfo" alt="Info" />
+            <h2>{{ $t(activeInfo.titleKey) }}</h2>
+            <h3><span class="uppercase">{{ activeInfo.price }}</span></h3>
+            <p class="info-hint">{{ $t('click_to_flip') }}</p>
+          </div>
+          <button type="button" class="info-close-btn" @click.stop.prevent="closeInfo">
+            {{ $t('close') }}
+          </button>
+        </div>
+        <div class="card-face card-back">
+          <div class="info-face-body">
+            <div class="card-back-content">
+              <p>{{ $t(activeInfo.descKey) }}</p>
+            </div>
+          </div>
+          <button type="button" class="info-close-btn" @click.stop.prevent="closeInfo">
+            {{ $t('close') }}
+          </button>
         </div>
       </div>
     </div>
@@ -106,11 +145,41 @@
 </template>
 
 <script setup>
-import { computed, ref, watch } from 'vue'
+import { computed, ref, watch, onMounted, onBeforeUnmount } from 'vue'
 import { useRouter } from 'vue-router'
 import logoInfo from '../assets/output-onlinepngtools-removebg-preview.png'
 
 const router = useRouter()
+
+const activeInfo = ref(null)
+const isInfoFlipped = ref(false)
+
+const handleKeydown = (event) => {
+  if (event.key === 'Escape' && activeInfo.value) {
+    closeInfo()
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('keydown', handleKeydown)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', handleKeydown)
+})
+
+function openInfo(item) {
+  activeInfo.value = item
+  // Open directly showing the detailed info side (back side)
+  isInfoFlipped.value = true
+  document.body.classList.add('no-scroll')
+}
+
+function closeInfo() {
+  activeInfo.value = null
+  isInfoFlipped.value = false
+  document.body.classList.remove('no-scroll')
+}
 
 const tabs = [
   { key: 'sites', labelKey: 'tab_websites' },
@@ -239,106 +308,3 @@ function goToContact() {
   router.push({ path: '/', hash: '#formsection' })
 }
 </script>
-
-<style scoped>
-.price-card {
-  perspective: 1000px;
-  cursor: pointer;
-  height: 100%;
-}
-
-.price-card {
-  perspective: 1000px;
-  cursor: pointer;
-  height: 100%;
-  border: 1px solid rgba(255, 29, 29, 0.9);
-  border-radius: 1rem;
-  background: rgba(34, 34, 73, 0.95);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease;
-}
-
-.price-card:hover {
-  transform: translateY(-4px);
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease;
-}
-
-.card-inner.flipped {
-  transform: rotateY(180deg);
-}
-
-.card-face {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1.3rem;
-  border-radius: 1rem;
-  background: rgba(34, 34, 73, 0.95);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  backface-visibility: hidden;
-  color: #fff;
-}
-
-.card-back {
-  transform: rotateY(180deg);
-}
-
-.card-logo {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  opacity: 0.85;
-}
-
-.card-back-content {
-  text-align: center;
-  padding: 0 1rem;
-}
-
-.card-back-content p {
-  line-height: 1.5;
-  font-size: 0.95rem;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.button {
-  background-color: rgba(255, 29, 29, 0.95);
-  border-color: rgba(255, 29, 29, 0.95);
-  color: white;
-}
-
-.button:hover {
-  background-color: rgba(255, 29, 29, 1);
-  border-color: rgba(255, 29, 29, 1);
-}
-
-.button.button--small {
-  padding: 0.5rem 0.9rem;
-  font-size: 0.85rem;
-  margin-top: 1rem;
-}
-
-.card-back-content {
-  text-align: center;
-}
-
-.button.button--small {
-  padding: 0.5rem 0.9rem;
-  font-size: 0.85rem;
-  margin-top: 1rem;
-}
-</style>

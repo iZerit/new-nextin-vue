@@ -12,9 +12,6 @@
 
 </template>
 
-<style scoped>
-
-</style>
 
 <script setup>
 import Header from "./components/Header.vue";

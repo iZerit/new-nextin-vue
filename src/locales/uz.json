@@ -96,5 +96,7 @@
   "select_services": "Xizmatlarni tanlang",
   "selected_services": "Tanlangan xizmatlar",
   "no_services_selected": "Hech qanday xizmat tanlanmagan",
-  "contact": "Biz bilan bog'lanish"
+  "contact": "Biz bilan bog'lanish",
+  "click_to_flip": "Kartani aylantirish uchun bosing",
+  "close": "Yopish"
 }

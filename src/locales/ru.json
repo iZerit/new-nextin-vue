@@ -96,5 +96,7 @@
   "select_services": "Выберите услуги",
   "selected_services": "Выбранные услуги",
   "no_services_selected": "Нет выбранных услуг",
-  "contact": "Связаться"  
+  "contact": "Связаться",
+  "click_to_flip": "Нажмите, чтобы перевернуть карточку",
+  "close": "Закрыть"
 }
