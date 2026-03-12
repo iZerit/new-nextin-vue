@@ -31,7 +31,7 @@ const router = createRouter({
       component : ()=> import('../OtherSections/Team.vue')
     },
     {
-      path: "/narxlar",
+      path: "/narxlar_xizmatlar",
       name: "narx",
       component : ()=> import('../OtherSections/Price.vue')
     },

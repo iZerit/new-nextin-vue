@@ -144,7 +144,7 @@
 
         </div>
         <div class="center_button d-flex justify-content-center mt-3 mb-5">
-          <router-link to="/xizmatlar" class="btn service_sec_but">{{$t('all_services')}}</router-link>
+          <router-link to="/narxlar_xizmatlar" class="btn service_sec_but">{{$t('all_services')}}</router-link>
         </div>
       </div>
     </div>

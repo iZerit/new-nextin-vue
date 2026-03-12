@@ -1386,8 +1386,38 @@ html{
     justify-content: space-between;
 }
 
+/* Mobile: 2 cards per row */
+@media (max-width: 575px) {
+    .grid-1-5 {
+        width: calc(50% - 10px);
+        min-width: 140px;
+        height: auto;
+        min-height: 300px;
+        padding: 1em;
+    }
+    
+    .grid-1-5 .button {
+        width: 100px;
+        margin-left: -50px;
+        padding: 0.5em 1em;
+        font-size: 0.9em;
+    }
+    
+    .grid-1-5 h2 {
+        font-size: 24px;
+    }
+    
+    .grid-1-5 h3 {
+        font-size: 0.9rem;
+    }
+    
+    .price-card-actions {
+        margin-top: 0.5rem;
+    }
+}
+
 .grid-1-5 {
-    width: 265px;
+    /* width: 265px; */
     border-radius: 0.375rem;
     height: 350px;
     padding: 1.25em;

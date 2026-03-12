@@ -15,7 +15,7 @@
             <router-link class="nav-link" to="/jamoa">{{$t('team')}}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/narxlar">{{$t('prices')}}</router-link>
+            <router-link class="nav-link" to="/narxlar_xizmatlar">{{$t('prices')}}</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" :to="{ path: '/', hash: '#formsection' }">{{$t('contact')}}</router-link>
@@ -54,7 +54,7 @@
             <router-link class="nav-link" to="/jamoa">{{$t('team')}}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/narxlar">{{$t('prices')}}</router-link>
+            <router-link class="nav-link" to="/narxlar_xizmatlar">{{$t('prices')}}</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" :to="{ path: '/', hash: '#formsection' }">{{$t('contact')}}</router-link>
@@ -96,11 +96,9 @@
           <router-link class="sitenav-item-link" to="/jamoa">{{$t('team')}}</router-link>
         </li>
         <li class="nav-item offcanvas-nav-item">
-          <router-link class="sitenav-item-link" to="/narxlar">{{$t('prices')}}</router-link>
+          <router-link class="sitenav-item-link" to="/narxlar_xizmatlar">{{$t('prices')}}</router-link>
         </li>
-        <li class="nav-item offcanvas-nav-item offcanvas-dropdown-menu">
-          <router-link class="sitenav-item-link" style="padding:0;" to="/xizmatlar">{{$t('services')}}</router-link>
-        </li>
+      
         <li class="nav-item offcanvas-nav-item">
           <router-link class="sitenav-item-link" style="padding:0;" :to="{ path: '/', hash: '#formsection' }">{{$t('contact')}}</router-link>
         </li>
