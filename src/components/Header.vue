@@ -81,7 +81,7 @@
   <!-- offcanvas for header burger menu -->
   <div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
     <div class="offcanvas-header">
-      <a href="#" class="offcanvas-title"><img src="" alt="" /></a>
+      <a href="/" class="offcanvas-title"><img src="../assets/MainLogo.png" alt="" /></a>
       <button type="button" class="btn-close text-reset close-but flex-end"
         data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>

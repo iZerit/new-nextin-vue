@@ -195,6 +195,11 @@ div{
     background-color: #222249;
 }
 
+.offcanvas-header .offcanvas-title img{
+    width: 200px;
+    height: 70px;
+}
+
 .offcanvas-body{
     background-color: #222249;
 }
