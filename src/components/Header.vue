@@ -88,19 +88,19 @@
     <div class="offcanvas-body uk-offcanvas-bar">
       <ul class="nav-pills navbar-nav justify-content-end uk-nav uk-nav-default">
         <li class="nav-item offcanvas-nav-item">
-          <router-link to="/">
+          <router-link to="/" @click="closeOffcanvas">
             <a class="sitenav-item-link">{{$t('home')}}</a>
           </router-link>
         </li>
         <li class="nav-item offcanvas-nav-item">
-          <router-link class="sitenav-item-link" to="/jamoa">{{$t('team')}}</router-link>
+          <router-link class="sitenav-item-link" to="/jamoa" @click="closeOffcanvas">{{$t('team')}}</router-link>
         </li>
         <li class="nav-item offcanvas-nav-item">
-          <router-link class="sitenav-item-link" to="/narxlar_xizmatlar">{{$t('prices')}}</router-link>
+          <router-link class="sitenav-item-link" to="/narxlar_xizmatlar" @click="closeOffcanvas">{{$t('prices')}}</router-link>
         </li>
       
         <li class="nav-item offcanvas-nav-item">
-          <router-link class="sitenav-item-link" style="padding:0;" :to="{ path: '/', hash: '#formsection' }">{{$t('contact')}}</router-link>
+          <router-link class="sitenav-item-link" style="padding:0;" :to="{ path: '/', hash: '#formsection' }" @click="closeOffcanvas">{{$t('contact')}}</router-link>
         </li>
         <!-- Language Switcher Buttons in Burger Menu -->
         <li class="nav-item mt-3">
@@ -109,7 +109,7 @@
               v-for="lang in langs"
               :key="lang.value"
               :class="['lang-btn', { selected: $i18n.locale === lang.value }]"
-              @click="setLocale(lang.value)"
+              @click="setLocale(lang.value);"
             >
               {{ lang.label }}
             </button>
@@ -133,6 +133,16 @@ export default {
   methods: {
     setLocale(locale) {
       this.$i18n.locale = locale;
+    },
+    closeOffcanvas() {
+      // Close the offcanvas when a link is clicked
+      const offcanvasElement = document.getElementById('offcanvasNavbar');
+      if (offcanvasElement) {
+        const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+        if (bsOffcanvas) {
+          bsOffcanvas.hide();
+        }
+      }
     }
   }
 }
