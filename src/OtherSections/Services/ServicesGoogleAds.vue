@@ -3,6 +3,7 @@
     <div class="container">
       <div class="services_div">
         <div class="services_inner_div">
+          <ServiceNavigation />
           <!-- Header Section -->
           <div class="programming_inner">
             <div class="services_title text-center mb-4 mt-5">
@@ -102,8 +103,13 @@
 </template>
 
 <script>
+import ServiceNavigation from '../../components/ServiceNavigation.vue';
+
 export default {
-  name: "ServicesGoogleAds"
+  name: "ServicesGoogleAds",
+  components: {
+    ServiceNavigation
+  }
 }
 </script>
 

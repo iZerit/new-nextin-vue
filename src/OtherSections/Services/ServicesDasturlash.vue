@@ -1,6 +1,7 @@
 <template>
   <section class="web_programming">
     <div class="container">
+      <ServiceNavigation />
       <!-- Header Section -->
       <div class="programming_inner">
         <div class="services_title text-center mb-4 mt-5">
@@ -97,8 +98,13 @@
 </template>
 
 <script>
+import ServiceNavigation from '../../components/ServiceNavigation.vue';
+
 export default {
-  name: "ServicesDasturlash"
+  name: "ServicesDasturlash",
+  components: {
+    ServiceNavigation
+  }
 }
 </script>
 
