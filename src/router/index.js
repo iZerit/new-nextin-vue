@@ -26,6 +26,26 @@ const router = createRouter({
       component : ()=> import('../OtherSections/Services/ServicesSeoOpt.vue')
     },
     {
+      path: "/xizmatlar/google-ads",
+      name: "xizmatlar-google-ads",
+      component : ()=> import('../OtherSections/Services/ServicesGoogleAds.vue')
+    },
+    {
+      path: "/xizmatlar/email-marketing",
+      name: "xizmatlar-email-marketing",
+      component : ()=> import('../OtherSections/Services/ServicesEmailMarketing.vue')
+    },
+    {
+      path: "/xizmatlar/internet-do-kon",
+      name: "xizmatlar-internet-do-kon",
+      component : ()=> import('../OtherSections/Services/ServicesOnlineStore.vue')
+    },
+    {
+      path: "/xizmatlar/internet-marketing",
+      name: "xizmatlar-internet-marketing",
+      component : ()=> import('../OtherSections/Services/ServicesInternetMarketing.vue')
+    },
+    {
       path: "/jamoa",
       name: "jamoa",
       component : ()=> import('../OtherSections/Team.vue')

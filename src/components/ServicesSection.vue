@@ -9,7 +9,7 @@
           </div>
           <div class="service_first_row">
             <div class="row">
-              <div class="first_card col-lg-4 col-md-4  col-sm-6">
+              <div data-aos="zoom-out"  data-aos-duration="1000" class="first_card col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
                   <router-link to="./xizmatlar/web-design">
                     <div class="first_icon">
@@ -24,7 +24,7 @@
                   <router-link to="./xizmatlar/web-design">{{$t('more_info')}}</router-link>
                 </div>
               </div>
-              <div class="first_card col-lg-4 col-md-4 col-sm-6">
+              <div data-aos="zoom-out" data-aos-duration="1000" class="first_card col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
                   <router-link to="/xizmatlar/web-dasturlash">
                     <div class="first_icon">
@@ -60,33 +60,37 @@
 
               <!-- Wordpressda sayt  -->
 
-              <div class="first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
+              <div data-aos="zoom-out" data-aos-duration="1000" class="first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
-                  <div class="first_icon">
-                    <i class="fa-brands fa-google"></i>
-                  </div>
-                  <a href="#"><h3 class="mt-3">{{$t('google_ads')}}</h3></a>
+                  <router-link to="/xizmatlar/google-ads">
+                    <div class="first_icon">
+                      <i class="fa-brands fa-google"></i>
+                    </div>
+                  </router-link>
+                  <router-link to="/xizmatlar/google-ads"><h3 class="mt-3">{{$t('google_ads')}}</h3></router-link>
                 </div>
                 <div class="card_text mt-2">
                   <p>{{$t('google_ads_desc')}}</p>
-                  <a href="#">{{$t('more_info')}}</a>
+                  <router-link to="/xizmatlar/google-ads">{{$t('more_info')}}</router-link>
 
                 </div>
               </div>
-              <div class="mt-5 first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
+              <div data-aos="zoom-out" data-aos-duration="1000" class="mt-5 first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
-                  <div class="first_icon">
-                    <i class="fa-solid fa-envelope"></i>
-                  </div>
-                  <a href="#"> <h3 class="mt-3">{{$t('email_marketing')}}</h3></a>
+                  <router-link to="/xizmatlar/email-marketing">
+                    <div class="first_icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                  </router-link>
+                  <router-link to="/xizmatlar/email-marketing"><h3 class="mt-3">{{$t('email_marketing')}}</h3></router-link>
                 </div>
                 <div class="card_text mt-2">
                   <p>{{$t('email_marketing_desc')}}</p>
-                  <a href="#">{{$t('more_info')}}</a>
+                  <router-link to="/xizmatlar/email-marketing">{{$t('more_info')}}</router-link>
 
                 </div>
               </div>
-              <div class="mt-5 first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
+              <div data-aos="zoom-out" data-aos-duration="1000" class="mt-5 first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
                   <router-link to="/xizmatlar/seo-optimizatsiya">
                     <div class="first_icon">
@@ -102,16 +106,18 @@
 
                 </div>
               </div>
-              <div class="first_card mt-5 col-lg-4 col-md-4 col-sm-6">
+              <div data-aos="zoom-out" data-aos-duration="1000" class="first_card mt-5 col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
-                  <div class="first_icon">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                  <a href="#"> <h3 class="mt-3">{{$t('online_store')}}</h3></a>
+                  <router-link to="/xizmatlar/internet-do-kon">
+                    <div class="first_icon">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </router-link>
+                  <router-link to="/xizmatlar/internet-do-kon"><h3 class="mt-3">{{$t('online_store')}}</h3></router-link>
                 </div>
                 <div class="card_text mt-2">
                   <p>{{$t('online_store_desc')}}</p>
-                  <a href="#">{{$t('more_info')}}</a>
+                  <router-link to="/xizmatlar/internet-do-kon">{{$t('more_info')}}</router-link>
 
                 </div>
               </div>
@@ -119,16 +125,18 @@
 
 
 
-              <div class="first_card mt-5 col-lg-4 col-md-4 col-sm-6">
+              <div data-aos="zoom-out" data-aos-duration="1000" class="first_card mt-5 col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
-                  <div class="first_icon">
-                    <i class="fa-solid fa-arrow-trend-up"></i>
-                  </div>
-                  <a href="#"><h3 class="mt-3">{{$t('internet_marketing')}}</h3></a>
+                  <router-link to="/xizmatlar/internet-marketing">
+                    <div class="first_icon">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+                  </router-link>
+                  <router-link to="/xizmatlar/internet-marketing"><h3 class="mt-3">{{$t('internet_marketing')}}</h3></router-link>
                 </div>
                 <div class="card_text mt-2">
                   <p>{{$t('internet_marketing_desc')}}</p>
-                  <a href="#">{{$t('more_info')}}</a>
+                  <router-link to="/xizmatlar/internet-marketing">{{$t('more_info')}}</router-link>
 
                 </div>
               </div>
@@ -155,8 +163,10 @@
 
 <script>
 export default {
-  name: "ServicesSection"
+  name: "ServicesSection",
+  mounted() {
+    AOS.init();
+  }
 }
-
 </script>
-
+    

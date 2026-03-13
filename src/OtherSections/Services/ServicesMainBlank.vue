@@ -37,7 +37,7 @@
 
               <!-- webdesign  -->
 
-              <div class="first_card col-lg-4 col-md-4 col-sm-6">
+              <div data-aos="zoom-out"  data-aos-duration="3000" class="first_card col-lg-4 col-md-4 col-sm-6 data-aos-init data-aos-animate">
                 <div class="icon_title d-flex">
                   <router-link to="/xizmatlar/web-design">
                     <div class="first_icon">
@@ -62,7 +62,7 @@
 
               <!-- web programm  -->
 
-              <div class="first_card col-lg-4 col-md-4 col-sm-6">
+              <div data-aos="zoom-out" class="first_card col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
                   <router-link to="/xizmatlar/web-dasturlash">
                     <div class="first_icon">
@@ -91,7 +91,7 @@
 
               <!-- google ads  -->
 
-              <div class="first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
+              <div data-aos="zoom-out" class="first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
                   <div class="first_icon">
                     <i class="fa-brands fa-google"></i>
@@ -114,7 +114,7 @@
 
               <!-- e-mail marketing  -->
 
-              <div class="first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
+              <div data-aos="zoom-out" class="first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
                   <div class="first_icon">
                     <i class="fa-solid fa-envelope"></i>
@@ -136,7 +136,7 @@
 
               <!-- seo optimisation  -->
 
-              <div class="first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
+              <div data-aos="zoom-out" class="first_card card_invincible_mobile col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
                   <router-link to="/xizmatlar/seo-optimizatsiya">
                     <div class="first_icon">
@@ -161,7 +161,7 @@
 
               <!-- internet do'kon  -->
 
-              <div class="first_card col-lg-4 col-md-4 col-sm-6">
+              <div data-aos="zoom-out" class="first_card col-lg-4 col-md-4 col-sm-6">
                 <div class="icon_title d-flex">
                   <div class="first_icon">
                     <i class="fa-solid fa-cart-shopping"></i>
@@ -184,7 +184,7 @@
 
               <!-- internet marketing  -->
 
-              <div class="first_card col-lg-4 col-md-4 col-sm-6 mb-5">
+              <div data-aos="zoom-out" class="first_card col-lg-4 col-md-4 col-sm-6 mb-5">
                 <div class="icon_title d-flex">
                   <div class="first_icon">
                     <i class="fa-solid fa-arrow-trend-up"></i>
@@ -222,7 +222,10 @@
 
 <script>
 export default {
-  name: "Xizmatlar"
+  name: "Xizmatlar",
+  mounted() {
+    AOS.init();
+  }
 }
 </script>
 
