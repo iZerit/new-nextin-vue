@@ -49,8 +49,8 @@
             <div class="card-image">
               <img class="img-fluid" src="/src/assets/services/webprogramm/2.png" alt="Script Languages">
             </div>
-            <h3 class="card-title">Skript tillari</h3>
-            <p class="card-text">Skript tillari kichikroq dasturlarni tavsiflash uchun ishlatiladi, lekin uning kamchiliklari, birinchi navbatda, xotiraga kirish va tizim funktsiyalarini yo'naltira olmasligi sababli, veb-dasturlashda ko'proq foydalidir va sodda va oson bo'lgan sintaksisi tufayli juda mashhur.</p>
+            <h3 class="card-title">{{ $t('script_languages') }}</h3>
+            <p class="card-text">{{ $t('script_languages_desc') }}</p>
             <div class="card-features">
               <span class="feature-tag">JavaScript</span>
               <span class="feature-tag">PHP</span>
@@ -69,8 +69,8 @@
             <div class="card-image">
               <img class="img-fluid" src="/src/assets/services/webprogramm/3.png" alt="Database">
             </div>
-            <h3 class="card-title">Relyatsional ma'lumotlar bazasi</h3>
-            <p class="card-text">Oldingi boshqaruv tizimi bilan birgalikda barcha ma'lumotlarni yig'ish bitta ma'lumotlar bazasini tashkil qiladi. Ma'muriyat ma'lumotlar bazasidagi ma'lumotlarni oson boshqarish, o'zgartirish, qo'shish va o'chirish imkonini beradi.</p>
+            <h3 class="card-title">{{ $t('database') }}</h3>
+            <p class="card-text">{{ $t('database_desc') }}</p>
             <div class="card-features">
               <span class="feature-tag">MySQL</span>
               <span class="feature-tag">PostgreSQL</span>

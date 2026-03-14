@@ -51,8 +51,8 @@
                 <div class="card-image">
                   <img class="img-fluid" src="/src/assets/services/webdesign/2.png" alt="Visual Identity">
                 </div>
-                <h3 class="card-title">Veb-saytning vizual identifikatori</h3>
-                <p class="card-text">Veb-saytning vizual identifikatori kontentni u mo'ljallangan maqsadli guruhga moslashtirishni o'z ichiga oladi. Maqsadli guruh ehtiyojlariga qarab yo'naltirilgan boshqa maqsadli guruhlarga yo'naltiriladi.</p>
+                <h3 class="card-title">{{ $t('design-vis') }}</h3>
+                <p class="card-text">{{ $t('design-vis_desc') }}</p>
                 <div class="card-features">
                   <span class="feature-tag">Branding</span>
                   <span class="feature-tag">Colors</span>
@@ -71,8 +71,8 @@
                 <div class="card-image">
                   <img class="img-fluid" src="/src/assets/services/webdesign/3.png" alt="User Experience">
                 </div>
-                <h3 class="card-title">Foydalanuvchi tajribasi</h3>
-                <p class="card-text">Foydalanuvchi tajribasi - bu veb-saytingizga tashrif buyuruvchilarning kontent, veb-saytning ishlash usuli va tarkibiy qismlarning joylashuvini tushunish haqidagi taassurotlari.</p>
+                <h3 class="card-title">{{ $t('design-ux') }}</h3>
+                <p class="card-text">{{ $t('design-ux_desc') }}</p>
                 <div class="card-features">
                   <span class="feature-tag">UX</span>
                   <span class="feature-tag">Usability</span>
@@ -91,8 +91,8 @@
                 <div class="card-image">
                   <img class="img-fluid" src="/src/assets/services/webdesign/4.png" alt="Code Quality">
                 </div>
-                <h3 class="card-title">Kod sifati</h3>
-                <p class="card-text">Kodning sifati, birinchi navbatda, shaffoflikda, ya'ni kodning o'qilishi va sahifaning boshida to'g'ri DOCTYPE deklaratsiyasi tufayli tizim tan oladigan xatolikda namoyon bo'ladi.</p>
+                <h3 class="card-title">{{ $t('code_quality') }}</h3>
+                <p class="card-text">{{ $t('code_quality_desc') }}</p>
                 <div class="card-features">
                   <span class="feature-tag">Clean Code</span>
                   <span class="feature-tag">W3C Valid</span>

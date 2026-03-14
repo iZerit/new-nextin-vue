@@ -22,7 +22,7 @@
           <div class="services-cards-grid">
             
             <!-- Email Campaigns Card -->
-            <div class="service-card">
+            <div class="service-card ">
               <div class="card-glow"></div>
               <div class="card-content">
                 <div class="card-icon">

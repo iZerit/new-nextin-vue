@@ -147,5 +147,22 @@
   "no_services_selected": "Hech qanday xizmat tanlanmagan",
   "contact": "Biz bilan bog'lanish",
   "click_to_flip": "Kartani aylantirish uchun bosing",
-  "close": "Yopish"
+  "close": "Yopish",
+  "design-vis": "Veb-saytning vizual identifikatori",
+  "design-vis_desc": "Veb-saytning vizual identifikatori kontentni u mo'ljallangan maqsadli guruhga moslashtirishni o'z ichiga oladi. Maqsadli guruh ehtiyojlariga qarab yo'naltirilgan boshqa maqsadli guruhlarga yo'naltiriladi.",
+  "design-ux": "Foydalanuvchi tajribasi",
+  "design-ux_desc": "Foydalanuvchi tajribasi - bu veb-saytingizga tashrif buyuruvchilarning kontent, veb-saytning ishlash usuli va tarkibiy qismlarning joylashuvini tushunish haqidagi taassurotlari.",
+  "code_quality": "Kod sifati",
+  "code_quality_desc": "Kodning sifati, birinchi navbatda, shaffoflikda, ya'ni kodning o'qilishi va sahifaning boshida to'g'ri DOCTYPE deklaratsiyasi tufayli tizim tan oladigan xatolikda namoyon bo'ladi.",
+  "script_languages": "Skript tillari",
+  "script_languages_desc": "Skript tillari kichikroq dasturlarni tavsiflash uchun ishlatiladi, lekin uning kamchiliklari, birinchi navbatda, xotiraga kirish va tizim funktsiyalarini yo'naltira olmasligi sababli, veb-dasturlashda ko'proq foydalidir va sodda va oson bo'lgan sintaksisi tufayli juda mashhur.",
+  "database": "Relyatsional ma'lumotlar bazasi",
+  "database_desc": "Oldingi boshqaruv tizimi bilan birgalikda barcha ma'lumotlarni yig'ish bitta ma'lumotlar bazasini tashkil qiladi. Ma'muriyat ma'lumotlar bazasidagi ma'lumotlarni oson boshqarish, o'zgartirish, qo'shish va o'chirish imkonini beradi.",
+  "push_ads_desc": "Qayta jalb qilish uchun push-bildirishnomalarni sozlash.",
+  "push_ads": "Push-bildirishnomalar",
+  "social_ads": "Ijtimoiy tarmoqlarda reklama",
+  "all_platform_ads": "Barcha platformalarda reklama",
+  "marketing_audit": "Marketing auditi",
+  "marketing_plan": "Marketing rejasi",
+  "guerrilla_marketing": "Gerilla marketing"
 }

@@ -209,6 +209,12 @@ div{
 .nav-item {
     padding-top: 10px;
     padding-left: 20px;
+    transition: all .7s ease;
+}
+
+.nav-item a{
+        transition: all .5s ease;
+
 }
 
 
