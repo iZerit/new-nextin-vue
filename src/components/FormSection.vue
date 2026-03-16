@@ -3,20 +3,29 @@
   <section class="form_section container mb-5" id="formsection">
     <div class="row justify-content-start">
       <div class="form_inner col-xl-6 col-lg-7 col-md-10 col-sm-12">
-        <form class="form" name="contact" method="POST" netlify data-netlify="true">
+   <form class="form" name="contact" method="POST" data-netlify="true" @submit.prevent="handleSubmit"></form>
+             <input type="hidden" name="form-name" value="contact" />
           <h1 class="text-center">{{ $t('contact') }}</h1>
 
+         <div v-if="formStatus === 'success'" class="alert alert-success text-center" role="alert">
+            {{ $t('form_success') || 'Thank you! Your message has been sent.' }}
+          </div>
+          <div v-if="formStatus === 'error'" class="alert alert-danger text-center" role="alert">
+            {{ $t('form_error') || 'Something went wrong. Please try again.' }}
+          </div>
+
+
           <div class="form_input">
-            <label> <input name="name" type="text" :placeholder="$t('name_placeholder')" class="form-control" required></label>
+      <input name="name" type="text" :placeholder="$t('name_placeholder')" class="form-control" required>
           
           </div>
 
           <div class="form_input">
-            <label><input name="email" type="email" :placeholder="$t('email_placeholder')" class="form-control" required></label>
+         <input name="email" type="email" :placeholder="$t('email_placeholder')" class="form-control" required>
           </div>
 
           <div class="form_input">
-            <label><input name="phone" id="phone-mask" ref="phoneMask" type="text" :placeholder="$t('phone_placeholder')" class="form-control"></label>
+      <input name="phone" id="phone-mask" ref="phoneMask" type="text" :placeholder="$t('phone_placeholder')" class="form-control">
           </div>
 
           <div class="form_input">
@@ -42,7 +51,7 @@
                     :value="service.titleKey"
                     v-model="selectedServices"
                   />
-                  <span>{{ $t(service.titleKey) }} — {{ service.price }}</span>
+                    <span>{{ $t(service.titleKey) }}<template v-if="service.price"> — {{ service.price }}</template></span>
                 </label>
               </div>
             </div>
@@ -93,6 +102,7 @@ export default {
   name: "FormSection",
   data() {
     return {
+        formStatus: null,
       selectedServices: [],
       servicesOpen: false,
       availableServices: [
@@ -176,6 +186,28 @@ export default {
     },
   },
   methods: {
+        async handleSubmit(event) {
+      this.formStatus = null
+      const form = event.target
+      const formData = new FormData(form)
+      try {
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString(),
+        })
+        if (response.ok) {
+          this.formStatus = 'success'
+          form.reset()
+          this.selectedServices = []
+          localStorage.removeItem('selectedServices')
+        } else {
+          this.formStatus = 'error'
+        }
+      } catch (err) {
+        this.formStatus = 'error'
+      }
+    },
     toggleServices() {
       this.servicesOpen = !this.servicesOpen
     },
