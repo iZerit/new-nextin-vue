@@ -209,11 +209,10 @@ div{
 .nav-item {
     padding-top: 10px;
     padding-left: 20px;
-    transition: all .7s ease;
 }
 
 .nav-item a{
-        transition: all .5s ease;
+        transition: color .3s ease;
 
 }
 
@@ -230,18 +229,17 @@ div{
 
 .nav-link{
     color:white;
+    border: 1px solid transparent;
+    border-radius: 20px;
 }
 
 .nav-link:hover{
     color: #ff1d1d;
-     border: 1px solid #ff1d1d;
-    border-radius: 20px;
+    transition: all .7s ease;
 }
 
 .nav-link:focus{
     color: #ff1d1d;
-    border: 1px solid #ff1d1d;
-    border-radius: 20px;
     background-color: #222249;
 }
 
