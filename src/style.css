@@ -1104,9 +1104,6 @@ footer{
     color: #ff1d1d;
 }
 
-.footer_service_list a {
-    padding-left: 10px;
-}
 
 
 .footer_btn{
@@ -1309,6 +1306,25 @@ html{
 .programming_info p, .second{
     color: white;
 }
+
+
+
+
+.services_arrow{
+    padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*services*/
 
 
@@ -2131,6 +2147,11 @@ html{
   background: rgba(255, 29, 29, 0.15);
   transform: translateY(-2px);
 }
+
+.center_button a{
+    transition: all .7s ease;
+}
+
 
 .form_buttons .service_sec_but {
   background: rgba(255, 29, 29, 0.9);

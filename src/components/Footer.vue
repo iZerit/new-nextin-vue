@@ -24,11 +24,11 @@
           <ul class="footer_service_list">
             <li><router-link to="/xizmatlar/web-design"><a style="padding-left: 0" >{{ $t('web_design') }}</a></router-link></li>
             <li> <router-link to="/xizmatlar/web-dasturlash"><a style="padding-left: 0" >{{ $t('web_sites') }}</a></router-link></li>
-            <li><a href="#">{{ $t('google_ads') }}</a></li>
-            <li><a href="#">{{ $t('email_marketing') }}</a></li>
+            <li><router-link to="/xizmatlar/google-ads"><a href="#">{{ $t('google_ads') }}</a></router-link></li>
+            <li><router-link to="/xizmatlar/email-marketing"><a href="#">{{ $t('email_marketing') }}</a></router-link></li>
             <li> <router-link to="/xizmatlar/seo-optimizatsiya"><a style="padding-left: 0" >{{ $t('seo_optimization') }}</a></router-link></li>
-            <li><a href="#">{{ $t('online_store') }}</a></li>
-            <li><a href="#">{{ $t('internet_marketing') }}</a></li>
+            <li><router-link to="/xizmatlar/internet-do-kon"><a href="#">{{ $t('online_store') }}</a></router-link></li>
+            <li><router-link to="/xizmatlar/internet-marketing"><a href="#">{{ $t('internet_marketing') }}</a></router-link></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-6 col-xs-12">
