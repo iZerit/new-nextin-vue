@@ -27,11 +27,15 @@ This project has been configured to work with Netlify's auto-detect forms featur
 npm run build
 ```
 
+**Important**: The build process will automatically copy the static form to the public directory for Netlify detection.
+
 ### 2. Deploy to Netlify
 
 #### Option A: Drag and Drop
 1. Build your project: `npm run build`
 2. Drag the `dist` folder to Netlify's deployment area
+
+**Note**: The static form is now included in your `index.html` file, so Netlify will detect it automatically during deployment.
 
 #### Option B: Connect Git Repository
 1. Push your code to GitHub/GitLab/Bitbucket
