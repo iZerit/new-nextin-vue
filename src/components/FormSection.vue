@@ -3,11 +3,11 @@
   <section class="form_section container mb-5" id="formsection">
     <div class="row justify-content-start">
       <div class="form_inner col-xl-6 col-lg-7 col-md-10 col-sm-12">
-        <form class="form" name="contact" netlify>
+        <form class="form" name="contact" method="POST" netlify data-netlify="true">
           <h1 class="text-center">{{ $t('contact') }}</h1>
 
           <div class="form_input">
-            <label> <input name="name" type="text" :placeholder="$t('name_placeholder')" class="form-control" required></label>
+            <label> <input name="name" type="text" :placeholder="$t('name_placeholder')" class="form-control" ></label>
           
           </div>
 
