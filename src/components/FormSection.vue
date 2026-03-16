@@ -12,11 +12,11 @@
           </div>
 
           <div class="form_input">
-            <input name="email" type="email" :placeholder="$t('email_placeholder')" class="form-control" required>
+            <label><input name="email" type="email" :placeholder="$t('email_placeholder')" class="form-control" required></label>
           </div>
 
           <div class="form_input">
-            <input name="phone" id="phone-mask" ref="phoneMask" type="text" :placeholder="$t('phone_placeholder')" class="form-control">
+            <label><input name="phone" id="phone-mask" ref="phoneMask" type="text" :placeholder="$t('phone_placeholder')" class="form-control"></label>
           </div>
 
           <div class="form_input">
