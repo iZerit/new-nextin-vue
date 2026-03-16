@@ -7,7 +7,7 @@
           <h1 class="text-center">{{ $t('contact') }}</h1>
 
           <div class="form_input">
-            <label> <input name="name" type="text" :placeholder="$t('name_placeholder')" class="form-control" ></label>
+            <label> <input name="name" type="text" :placeholder="$t('name_placeholder')" class="form-control" required></label>
           
           </div>
 
@@ -48,6 +48,9 @@
             </div>
           </div>
 
+          <!-- Hidden input to store selected services for Netlify -->
+          <input type="hidden" name="selected_services" :value="selectedServices.join(',')">
+          
           <div class="mt-3" data-netlify-recaptcha="true"></div>
 
           <div class="form_buttons d-flex justify-content-center">
