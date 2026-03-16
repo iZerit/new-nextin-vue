@@ -7,7 +7,8 @@
           <h1 class="text-center">{{ $t('contact') }}</h1>
 
           <div class="form_input">
-            <input name="name" type="text" :placeholder="$t('name_placeholder')" class="form-control" required>
+            <label> <input name="name" type="text" :placeholder="$t('name_placeholder')" class="form-control" required></label>
+          
           </div>
 
           <div class="form_input">
