@@ -164,5 +164,8 @@
   "all_platform_ads": "Barcha platformalarda reklama",
   "marketing_audit": "Marketing auditi",
   "marketing_plan": "Marketing rejasi",
-  "guerrilla_marketing": "Gerilla marketing"
+  "guerrilla_marketing": "Gerilla marketing",
+  "form_success": "Muvaffaqiyat! Sizning xabaringiz yuborildi.",
+  "form_error": "Xatolik! Xabaringiz yuborilmadi. Iltimos, qayta urinib ko'ring."
+  
 }

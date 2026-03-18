@@ -3,7 +3,7 @@
   <section class="form_section container mb-5" id="formsection">
     <div class="row justify-content-start">
       <div class="form_inner col-xl-6 col-lg-7 col-md-10 col-sm-12">
-   <form class="form" name="contact" method="POST" data-netlify="true" @submit.prevent="handleSubmit"></form>
+   <form class="form" name="contact" method="POST" data-netlify="true" @submit.prevent="handleSubmit">
              <input type="hidden" name="form-name" value="contact" />
           <h1 class="text-center">{{ $t('contact') }}</h1>
 
