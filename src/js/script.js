@@ -41,12 +41,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
 });
 
 
@@ -59,7 +53,7 @@ $(document).ready(function(){
 
 // for scrool top show and hide vvvvvvvvv
     $(window).scroll(function(){
-        if(this.scrollY > 50){
+        if(this.scrollY > 300){
             $('#btn-back-to-top').show();
         }else{
             $('#btn-back-to-top').hide();

@@ -31,7 +31,7 @@ export default {
         { path: "/xizmatlar/web-dasturlash", name: "Web Dasturlash" },
         { path: "/xizmatlar/google-ads", name: "Google Ads" },
         { path: "/xizmatlar/email-marketing", name: "Email Marketing" },
-        { path: "/xizmatlar/seo-optimizatsiya", name: "SEO" },
+        { path: "/xizmatlar/seo-optimizatsiya", name: "SEO Optimizatsiya" },
         { path: "/xizmatlar/internet-do-kon", name: "Internet Do'kon" },
         { path: "/xizmatlar/internet-marketing", name: "Internet Marketing" }
       ];
@@ -59,41 +59,5 @@ export default {
 </script>
 
 <style scoped>
-.service-nav-container {
-  margin-bottom: 20px;
-}
 
-.service-nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.nav-btn {
-  background: rgba(34, 34, 73, 0.9);
-  color: white;
-  padding: 12px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  border: 1px solid #ff1d1d;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-}
-
-.nav-btn:hover {
-  background: #ff1d1d;
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .nav-btn {
-    padding: 8px 12px;
-    font-size: 12px;
-  }
-}
 </style>
