@@ -50,7 +50,7 @@
                 <div class="card_text mt-2">
                   <p>Nextin Web Studio veb-dizaynerlar jamoasi bilan faxrlanadi, ular o'zlarining ko'p
                     yillik tajribalarini yaratishda o'tkazadilar ...</p>
-                  <router-link to="/xizmatlar/web-design">To'liq ma'lumot</router-link>
+                  <router-link to="/xizmatlar/web-design" class="btn service_sec_but">To'liq ma'lumot</router-link>
                 </div>
               </div>
 
@@ -76,7 +76,7 @@
                   <p>"Veb dasturlash" atamasi internet uchun veb-sayt yoki veb-ilovaning butun
                     rivojlanishini o'z ichiga oladi ...
                   </p>
-                  <router-link to="/xizmatlar/web-dasturlash">To'liq ma'lumot</router-link>
+                  <router-link to="/xizmatlar/web-dasturlash" class="btn service_sec_but">To'liq ma'lumot</router-link>
 
                 </div>
               </div>
@@ -102,7 +102,7 @@
                   <p>Muvaffaqiyat dunyosidagi etakchi shior - "Vaqt - bu pul". Hech kim cheksiz
                     izlanishlarga berilmaydi ...
                   </p>
-                  <a href="#">To'liq ma'lumot</a>
+                  <a href="#" class="btn service_sec_but">To'liq ma'lumot</a>
 
                 </div>
               </div>
@@ -125,7 +125,7 @@
                   <p>Mahsulot sotishda asosiy narsa nima ekanligini bilasizmi?Reklama! Marketing - bu
                     shaxsiy guvohnoma ...
                   </p>
-                  <a href="#">To'liq ma'lumot</a>
+                  <a href="#" class="btn service_sec_but">To'liq ma'lumot</a>
 
                 </div>
               </div>
@@ -149,7 +149,7 @@
                   <p>Bizning Nextin Web Studio jamoasi veb-saytni optimallashtirish mazmuniga kelganda
                     uzoq muddatli tajribaga ega. ...
                   </p>
-                  <router-link to="/xizmatlar/seo-optimizatsiya">To'liq ma'lumot</router-link>
+                  <router-link to="/xizmatlar/seo-optimizatsiya" class="btn service_sec_but">To'liq ma'lumot</router-link>
 
                 </div>
               </div>
@@ -172,7 +172,7 @@
                   <p>Internetning rivojlanishi bilan - internet elektron biznesining rivojlanishi ham
                     oshib bormoqda....
                   </p>
-                  <router-link to="/">To'liq ma'lumot</router-link>
+                  <router-link to="/" class="btn service_sec_but">To'liq ma'lumot</router-link>
 
                 </div>
               </div>
@@ -196,7 +196,7 @@
                     ko'rinmas
                     narsa - bu ...
                   </p>
-                  <router-link to="/">To'liq ma'lumot</router-link>
+                  <router-link to="/" class="btn service_sec_but">To'liq ma'lumot</router-link>
 
                 </div>
               </div>

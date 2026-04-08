@@ -17,7 +17,7 @@
           <div class="grid-1-5 price_list_card ">
             <h2>{{ $t('wordpress_site') }}</h2>
             <h3><span class="uppercase">6 000 000 so'm</span></h3>
-            <a href="" class="button">{{ $t('order') }}</a>
+            <a href="" class="button ">{{ $t('order') }}</a>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">

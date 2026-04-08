@@ -21,7 +21,7 @@
                 </div>
                 <div class="card_text mt-2">
                   <p>{{$t('web_design_desc')}}</p>
-                  <router-link to="./xizmatlar/web-design">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
+                  <router-link to="./xizmatlar/web-design" class="btn service_sec_but">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow "></i></router-link>
                 </div>
               </div>
               <div data-aos="zoom-out" data-aos-duration="1000" class="first_card col-lg-4 col-md-4 col-sm-6">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="card_text mt-2">
                   <p>{{$t('web_dev_desc')}}</p>
-                  <router-link to="/xizmatlar/web-dasturlash">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
+                  <router-link to="/xizmatlar/web-dasturlash" class="btn service_sec_but">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
 
                 </div>
               </div>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="card_text mt-2">
                   <p>{{$t('google_ads_desc')}}</p>
-                  <router-link to="/xizmatlar/google-ads">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
+                  <router-link to="/xizmatlar/google-ads" class="btn service_sec_but">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
 
                 </div>
               </div>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="card_text mt-2">
                   <p>{{$t('email_marketing_desc')}}</p>
-                  <router-link to="/xizmatlar/email-marketing">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
+                  <router-link to="/xizmatlar/email-marketing" class="btn service_sec_but">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
 
                 </div>
               </div>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="card_text mt-2">
                   <p>{{$t('seo_optimization_desc')}}</p>
-                  <router-link to="/xizmatlar/seo-optimizatsiya">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
+                  <router-link to="/xizmatlar/seo-optimizatsiya" class="btn service_sec_but">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
 
                 </div>
               </div>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="card_text mt-2">
                   <p>{{$t('online_store_desc')}}</p>
-                  <router-link to="/xizmatlar/internet-do-kon">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
+                  <router-link to="/xizmatlar/internet-do-kon"  class="btn service_sec_but">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
 
                 </div>
               </div>
@@ -136,7 +136,7 @@
                 </div>
                 <div class="card_text mt-2">
                   <p>{{$t('internet_marketing_desc')}}</p>
-                  <router-link to="/xizmatlar/internet-marketing">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
+                  <router-link to="/xizmatlar/internet-marketing" class="btn service_sec_but">{{$t('more_info')}}<i class="fa-solid fa-arrow-right services_arrow"></i></router-link>
 
                 </div>
               </div>
