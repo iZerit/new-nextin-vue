@@ -27,159 +27,35 @@
           :key="item.titleKey"
           class="grid-1-5 col-lg-3 col-md-4 col-sm-6"
         >
-          <div
-            class="price-card"
-            @click="toggleFlip(item.titleKey)"
-            @mouseleave="unflipIfFlipped(item.titleKey)"
-            role="button"
-            tabindex="0"
-            @keydown.enter.prevent="toggleFlip(item.titleKey)"
-            @keydown.space.prevent="toggleFlip(item.titleKey)"
-          >
-            <div class="card-inner" :class="{ flipped: isFlipped(item.titleKey) }">
-              <div class="card-face card-front">
-                <img class="card-logo" :src="logoInfo" alt="Info" />
-                <h2>{{ $t(item.titleKey) }}</h2>
-                <h3><span class="uppercase">{{ item.price }}</span></h3>
-                <div class="price-card-actions">
-                  <a
-                    href="#"
-                    class="button"
-                    @click.stop.prevent="addOrder(item)"
-                  >
-                    {{ $t('order') }}
-                  </a>
-                </div>
-              </div>
-              <div class="card-face card-back">
-                <div class="card-back-content">
-                  <p>{{ $t(item.descKey) }}</p>
-                  <button
-                    type="button"
-                    class="button button--small"
-                    @click.stop.prevent="openInfo(item)"
-                  >
-                    {{ $t('more_info') }}
-                  </button>
-                </div>
+          <div class="price-card">
+            <div class="price-card-image">
+              <img :src="item.image || defaultImage" :alt="$t(item.titleKey)" />
+            </div>
+            <div class="price-card-body">
+              <h2>{{ $t(item.titleKey) }}</h2>
+              <h3><span class="uppercase">{{ item.price }}</span></h3>
+              <div class="price-card-actions">
+                <router-link
+                  :to="item.route || getDefaultRoute(item.titleKey)"
+                  class="button more-info-btn"
+                >
+                  {{ $t('more_info') }}
+                </router-link>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div
-    v-if="activeInfo"
-    class="info-overlay"
-    @click.self="closeInfo"
-    tabindex="0"
-  >
-    <div class="info-card">
-      <div
-        class="card-inner"
-        :class="{ flipped: isInfoFlipped }"
-        @click.stop="isInfoFlipped = !isInfoFlipped"
-      >
-        <div class="card-face card-front">
-          <div class="info-face-body">
-            <img class="card-logo" :src="logoInfo" alt="Info" />
-            <h2>{{ $t(activeInfo.titleKey) }}</h2>
-            <h3><span class="uppercase">{{ activeInfo.price }}</span></h3>
-            <p class="info-hint">{{ $t('click_to_flip') }}</p>
-          </div>
-          <button type="button" class="info-close-btn" @click.stop.prevent="closeInfo">
-            {{ $t('close') }}
-          </button>
-        </div>
-        <div class="card-face card-back">
-          <div class="info-face-body">
-            <div class="card-back-content">
-              <p>{{ $t(activeInfo.descKey) }}</p>
-            </div>
-          </div>
-          <button type="button" class="info-close-btn" @click.stop.prevent="closeInfo">
-            {{ $t('close') }}
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div v-if="orders.length" class="order-box">
-    <div class="order-box-header">
-      <div>
-        <strong>{{ $t('orders') }}</strong>
-        <span class="order-count" style="color: white;">({{ orders.length }})</span>
-      </div>
-      <button class="order-clear" @click="clearOrders" aria-label="Clear orders">
-        ✕
-      </button>
-    </div>
-
-    <ul class="order-list">
-      <li v-for="order in orders" :key="order.id">
-        <button
-          class="order-remove"
-          @click="removeOrder(order.id)"
-          type="button"
-          aria-label="Remove"
-        >
-          −
-        </button>
-        <span class="order-name">{{ $t(order.titleKey) }}</span>
-        <span class="order-price">{{ order.price }}</span>
-      </li>
-    </ul>
-
-    <div class="order-total">
-      {{ $t('total') }}:
-      <span class="order-total-value">{{ formattedTotal }}</span>
-    </div>
-
-    <button class="order-contact" @click="goToContact" type="button">
-      {{ $t('order_') }}
-    </button>
   </div>
 </template>
 
 <script setup>
-import { computed, ref, watch, onMounted, onBeforeUnmount } from 'vue'
+import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import logoInfo from '../assets/output-onlinepngtools-removebg-preview.png'
+import defaultImage from '../assets/output-onlinepngtools-removebg-preview.png'
 
 const router = useRouter()
-
-const activeInfo = ref(null)
-const isInfoFlipped = ref(false)
-
-const handleKeydown = (event) => {
-  if (event.key === 'Escape' && activeInfo.value) {
-    closeInfo()
-  }
-}
-
-onMounted(() => {
-  window.addEventListener('keydown', handleKeydown)
-})
-
-onBeforeUnmount(() => {
-  window.removeEventListener('keydown', handleKeydown)
-})
-
-function openInfo(item) {
-  activeInfo.value = item
-  // Open directly showing the detailed info side (back side)
-  isInfoFlipped.value = true
-  document.body.classList.add('no-scroll')
-}
-
-function closeInfo() {
-  activeInfo.value = null
-  isInfoFlipped.value = false
-  document.body.classList.remove('no-scroll')
-}
 
 const tabs = [
   { key: 'sites', labelKey: 'tab_websites' },
@@ -188,31 +64,33 @@ const tabs = [
 
 const activeTab = ref('sites')
 
-const flipped = ref(new Set())
-
-watch(activeTab, () => {
-  // Reset flipped cards when switching tabs
-  flipped.value = new Set()
-})
-
-function isFlipped(key) {
-  return flipped.value.has(key)
+// Route mapping for products - maps titleKey to route path
+const routeMapping = {
+  // Sites
+  'wordpress_landing': '/xizmatlar/wordpress-landing',
+  'wordpress_site': '/xizmatlar/wordpress-sayt',
+  'corporate_site': '/xizmatlar/korporativ-sayt',
+  'simple_site': '/xizmatlar/oddij-sayt',
+  'complex_site': '/xizmatlar/murakkab-sayt',
+  'very_complex_site': '/xizmatlar/juda-murakkab-sayt',
+  // Ads
+  'yandex_google_ads': '/xizmatlar/yandex-google-reklama',
+  'social_ads': '/xizmatlar/ijtimoiy-tarmoqlar-reklamasi',
+  'all_platform_ads': '/xizmatlar/barcha-platformalar-reklamasi',
+  'seo_ads': '/xizmatlar/seo-optimizatsiya',
+  'marketing_audit': '/xizmatlar/marketing-audit',
+  'marketing_plan': '/xizmatlar/marketing-reja',
+  'email_marketing': '/xizmatlar/email-marketing',
+  'push_ads': '/xizmatlar/push-xabarnoma',
+  'guerrilla_marketing': '/xizmatlar/gerrila-marketing',
+  // Design
+  'creative_set': '/xizmatlar/kreativ-to-plam',
+  'logo_design': '/xizmatlar/logo-dizayn',
 }
 
-function toggleFlip(key) {
-  const next = new Set(flipped.value)
-  if (next.has(key)) {
-    next.delete(key)
-  } else {
-    next.add(key)
-  }
-  flipped.value = next
-}
-
-function unflipIfFlipped(key) {
-  if (isFlipped(key)) {
-    toggleFlip(key)
-  }
+// Get default route for a product based on titleKey
+function getDefaultRoute(titleKey) {
+  return routeMapping[titleKey] || '/xizmatlar'
 }
 
 const sections = [
@@ -220,35 +98,35 @@ const sections = [
     group: 'sites',
     titleKey: 'service_prices',
     items: [
-      { titleKey: 'wordpress_landing', price: "3 000 000 so'm", descKey: 'wordpress_landing_desc' },
-      { titleKey: 'wordpress_site', price: "6 000 000 so'm", descKey: 'wordpress_site_desc' },
-      { titleKey: 'corporate_site', price: "7 500 000 so'm", descKey: 'corporate_site_desc' },
-      { titleKey: 'simple_site', price: "8 000 000 so'm", descKey: 'simple_site_desc' },
-      { titleKey: 'complex_site', price: "10 000 000 so'm", descKey: 'complex_site_desc' },
-      { titleKey: 'very_complex_site', price: "12 000 000 so'm", descKey: 'very_complex_site_desc' },
+      { titleKey: 'wordpress_landing', price: "3 000 000 so'm", descKey: 'wordpress_landing_desc', image: defaultImage },
+      { titleKey: 'wordpress_site', price: "6 000 000 so'm", descKey: 'wordpress_site_desc', image: defaultImage },
+      { titleKey: 'corporate_site', price: "7 500 000 so'm", descKey: 'corporate_site_desc', image: defaultImage },
+      { titleKey: 'simple_site', price: "8 000 000 so'm", descKey: 'simple_site_desc', image: defaultImage },
+      { titleKey: 'complex_site', price: "10 000 000 so'm", descKey: 'complex_site_desc', image: defaultImage },
+      { titleKey: 'very_complex_site', price: "12 000 000 so'm", descKey: 'very_complex_site_desc', image: defaultImage },
     ],
   },
   {
     group: 'ads',
     titleKey: 'ads_support',
     items: [
-      { titleKey: 'yandex_google_ads', price: "4 000 000 so'm", descKey: 'yandex_google_ads_desc' },
-      { titleKey: 'social_ads', price: "4 000 000 so'm", descKey: 'social_ads_desc' },
-      { titleKey: 'all_platform_ads', price: "5 000 000 so'm", descKey: 'all_platform_ads_desc' },
-      { titleKey: 'seo_ads', price: "6 000 000 so'm", descKey: 'seo_ads_desc' },
-      { titleKey: 'marketing_audit', price: "10 000 000 so'm", descKey: 'marketing_audit_desc' },
-      { titleKey: 'marketing_plan', price: "15 000 000 so'm", descKey: 'marketing_plan_desc' },
-      { titleKey: 'email_marketing', price: "8 000 000 so'm", descKey: 'email_marketing_desc' },
-      { titleKey: 'push_ads', price: "6 500 000 so'm", descKey: 'push_ads_desc' },
-      { titleKey: 'guerrilla_marketing', price: "30 000 000 so'm", descKey: 'guerrilla_marketing_desc' },
+      { titleKey: 'yandex_google_ads', price: "4 000 000 so'm", descKey: 'yandex_google_ads_desc', image: defaultImage },
+      { titleKey: 'social_ads', price: "4 000 000 so'm", descKey: 'social_ads_desc', image: defaultImage },
+      { titleKey: 'all_platform_ads', price: "5 000 000 so'm", descKey: 'all_platform_ads_desc', image: defaultImage },
+      { titleKey: 'seo_ads', price: "6 000 000 so'm", descKey: 'seo_ads_desc', image: defaultImage },
+      { titleKey: 'marketing_audit', price: "10 000 000 so'm", descKey: 'marketing_audit_desc', image: defaultImage },
+      { titleKey: 'marketing_plan', price: "15 000 000 so'm", descKey: 'marketing_plan_desc', image: defaultImage },
+      { titleKey: 'email_marketing', price: "8 000 000 so'm", descKey: 'email_marketing_desc', image: defaultImage },
+      { titleKey: 'push_ads', price: "6 500 000 so'm", descKey: 'push_ads_desc', image: defaultImage },
+      { titleKey: 'guerrilla_marketing', price: "30 000 000 so'm", descKey: 'guerrilla_marketing_desc', image: defaultImage },
     ],
   },
   {
     group: 'ads',
     titleKey: 'design_ads_materials',
     items: [
-      { titleKey: 'creative_set', price: "3 000 000 so'm", descKey: 'creative_set_desc' },
-      { titleKey: 'logo_design', price: "1 500 000 so'm", descKey: 'logo_design_desc' },
+      { titleKey: 'creative_set', price: "3 000 000 so'm", descKey: 'creative_set_desc', image: defaultImage },
+      { titleKey: 'logo_design', price: "1 500 000 so'm", descKey: 'logo_design_desc', image: defaultImage },
     ],
   },
 ]
@@ -256,55 +134,99 @@ const sections = [
 const displayedSections = computed(() => {
   return sections.filter((section) => section.group === activeTab.value)
 })
-
-const orders = ref([])
-let nextOrderId = 1
-
-function parsePrice(price) {
-  const digits = String(price).replace(/[^\d]/g, '')
-  return digits ? Number(digits) : 0
-}
-
-function saveSelectedServices() {
-  const keys = orders.value.map((order) => order.titleKey)
-  localStorage.setItem('selectedServices', JSON.stringify(keys))
-}
-
-function addOrder(item) {
-  // Prevent adding the same item twice
-  if (orders.value.some((order) => order.titleKey === item.titleKey)) {
-    return
-  }
-
-  orders.value.unshift({
-    id: nextOrderId++,
-    titleKey: item.titleKey,
-    price: item.price,
-    amount: parsePrice(item.price),
-  })
-
-  saveSelectedServices()
-}
-
-function clearOrders() {
-  orders.value = []
-  saveSelectedServices()
-}
-
-function removeOrder(id) {
-  orders.value = orders.value.filter((order) => order.id !== id)
-  saveSelectedServices()
-}
-
-const total = computed(() => {
-  return orders.value.reduce((sum, order) => sum + order.amount, 0)
-})
-
-const formattedTotal = computed(() => {
-  return new Intl.NumberFormat('ru-RU').format(total.value) + " so'm"
-})
-
-function goToContact() {
-  router.push({ path: '/', hash: '#formsection' })
-}
 </script>
+
+<style scoped>
+/* Price Card Styles - Normal card without flip */
+.price-card {
+  border: 1px solid rgba(255, 29, 29, 0.9);
+  border-radius: 1rem;
+  background: rgba(34, 34, 73, 0.95);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.price-card-image {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 29, 29, 0.3);
+}
+
+.price-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.price-card:hover .price-card-image img {
+  transform: scale(1.05);
+}
+
+.price-card-body {
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+
+.price-card-body h2 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.price-card-body h3 {
+  color: #ff1d1d;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price-card-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.price-card-actions .button {
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+/* More Info Button */
+.more-info-btn {
+  background-color: rgba(255, 29, 29, 0.95);
+  border-color: rgba(255, 29, 29, 0.95);
+  color: white !important;
+}
+
+.more-info-btn:hover {
+  background-color: rgba(255, 29, 29, 1);
+  border-color: rgba(255, 29, 29, 1);
+  color: #222249 !important;
+}
+
+</style>

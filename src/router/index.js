@@ -85,6 +85,97 @@ const router = createRouter({
         title: "Nextin | Narxlar"
       }
     },
+    // Price Services Pages
+    {
+      path: "/xizmatlar/wordpress-landing",
+      name: "wordpress-landing",
+      component: () => import('../OtherSections/Services/PriceServices/WordPressLanding.vue'),
+      meta: { title: "Nextin | WordPress Landing Page" }
+    },
+    {
+      path: "/xizmatlar/wordpress-sayt",
+      name: "wordpress-sayt",
+      component: () => import('../OtherSections/Services/PriceServices/WordPressSite.vue'),
+      meta: { title: "Nextin | WordPress Sayt" }
+    },
+    {
+      path: "/xizmatlar/korporativ-sayt",
+      name: "korporativ-sayt",
+      component: () => import('../OtherSections/Services/PriceServices/CorporateSite.vue'),
+      meta: { title: "Nextin | Korporativ Sayt" }
+    },
+    {
+      path: "/xizmatlar/oddij-sayt",
+      name: "oddij-sayt",
+      component: () => import('../OtherSections/Services/PriceServices/SimpleSite.vue'),
+      meta: { title: "Nextin | Oddiy Sayt" }
+    },
+    {
+      path: "/xizmatlar/murakkab-sayt",
+      name: "murakkab-sayt",
+      component: () => import('../OtherSections/Services/PriceServices/ComplexSite.vue'),
+      meta: { title: "Nextin | Murakkab Sayt" }
+    },
+    {
+      path: "/xizmatlar/juda-murakkab-sayt",
+      name: "juda-murakkab-sayt",
+      component: () => import('../OtherSections/Services/PriceServices/VeryComplexSite.vue'),
+      meta: { title: "Nextin | Juda Murakkab Sayt" }
+    },
+    {
+      path: "/xizmatlar/yandex-google-reklama",
+      name: "yandex-google-reklama",
+      component: () => import('../OtherSections/Services/PriceServices/YandexGoogleAds.vue'),
+      meta: { title: "Nextin | Yandex Google Reklama" }
+    },
+    {
+      path: "/xizmatlar/ijtimoiy-tarmoqlar-reklamasi",
+      name: "ijtimoiy-tarmoqlar-reklamasi",
+      component: () => import('../OtherSections/Services/PriceServices/SocialAds.vue'),
+      meta: { title: "Nextin | Ijtimoiy Tarmoqlar Reklamasi" }
+    },
+    {
+      path: "/xizmatlar/barcha-platformalar-reklamasi",
+      name: "barcha-platformalar-reklamasi",
+      component: () => import('../OtherSections/Services/PriceServices/AllPlatformAds.vue'),
+      meta: { title: "Nextin | Barcha Platformalar Reklamasi" }
+    },
+    {
+      path: "/xizmatlar/marketing-audit",
+      name: "marketing-audit",
+      component: () => import('../OtherSections/Services/PriceServices/MarketingAudit.vue'),
+      meta: { title: "Nextin | Marketing Audit" }
+    },
+    {
+      path: "/xizmatlar/marketing-reja",
+      name: "marketing-reja",
+      component: () => import('../OtherSections/Services/PriceServices/MarketingPlan.vue'),
+      meta: { title: "Nextin | Marketing Reja" }
+    },
+    {
+      path: "/xizmatlar/push-xabarnoma",
+      name: "push-xabarnoma",
+      component: () => import('../OtherSections/Services/PriceServices/PushAds.vue'),
+      meta: { title: "Nextin | Push Xabarnoma" }
+    },
+    {
+      path: "/xizmatlar/gerrila-marketing",
+      name: "gerrila-marketing",
+      component: () => import('../OtherSections/Services/PriceServices/GuerrillaMarketing.vue'),
+      meta: { title: "Nextin | Guerrilla Marketing" }
+    },
+    {
+      path: "/xizmatlar/kreativ-to-plam",
+      name: "kreativ-to-plam",
+      component: () => import('../OtherSections/Services/PriceServices/CreativeSet.vue'),
+      meta: { title: "Nextin | Kreativ To'plam" }
+    },
+    {
+      path: "/xizmatlar/logo-dizayn",
+      name: "logo-dizayn",
+      component: () => import('../OtherSections/Services/PriceServices/LogoDesign.vue'),
+      meta: { title: "Nextin | Logo Dizayn" }
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
